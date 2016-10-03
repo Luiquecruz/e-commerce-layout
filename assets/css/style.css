@@ -20,8 +20,6 @@ nav.navbar-inverse {
 	border-color: #cecece;
 }
 
-
-
 ul.menu-top-header {
 	list-style: none;
 }
@@ -29,4 +27,16 @@ ul.menu-top-header {
 li.mth-item {
 	margin-top: 10px;
 
+}
+
+// Carousel Style
+
+div.item img.carousel-bg {
+	position: relative;
+	width: 100%;
+}
+
+div.carousel-caption {
+	position: absolute;
+	text-align: left;
 }
