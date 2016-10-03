@@ -1,0 +1,32 @@
+body {
+	padding-top: 50px;
+}
+
+li {
+	list-style: none;
+}
+
+// top-header bar style
+
+
+nav.navbar{
+	margin-bottom: 0;
+}
+
+nav.navbar-inverse {
+	min-height: 10px;
+	margin-bottom: 0;
+	background-color: #fff;
+	border-color: #cecece;
+}
+
+
+
+ul.menu-top-header {
+	list-style: none;
+}
+
+li.mth-item {
+	margin-top: 10px;
+
+}
