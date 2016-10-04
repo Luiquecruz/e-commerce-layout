@@ -25,13 +25,16 @@ ul.menu-top-header {
 
 li.mth-item {
 	margin-top: 10px;
-
 }
 
-// Carousel style
+// Carousel 
+
+div.carousel {
+	background: #eee;
+}
 
 div.item img.carousel-bg {
-	position: relative;
+	max-height: 600px;
 	width: 100%;
 }
 
@@ -66,4 +69,21 @@ a#left-radius {
 a#right-radius {
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
+}
+
+// Frames
+
+div#prod-frame {
+	padding: 0;
+}
+
+div.img-frame {
+	width: 480px;
+	height: 200px;
+	padding: 10px 10px 5px 20px;
+	background-color: #eee;
+}
+
+div.img-frame img {
+	float: left;
 }

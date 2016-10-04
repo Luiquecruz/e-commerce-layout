@@ -136,7 +136,7 @@
             </div>
         </div> <!-- end container-fluid -->
         
-        <nav class="navbar navbar-inverse" role="navigation">
+        <nav class="navbar navbar-inverse" id="menu" role="navigation">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 text-center">
@@ -178,7 +178,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="carousel slide" id="myCarousel" data-ride="carousel">
-                    <!-- indicators -->
+                    <!-- Indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -188,6 +188,8 @@
                         <li data-target="#myCarousel" data-slide-to="5"></li>
                     </ol>
                     <!-- Items -->
+                    <!-- Important: Image max height is setted to 600px -->
+                    <!-- Important: Diferent width sizes may cause crashes -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active img-responsive" >
                             <img class="carousel-bg" src="http://placehold.it/1920x600" alt="First Slide">
@@ -212,7 +214,7 @@
                                 <div class="carousel-caption">
                                     <h3>Sell to get what you love</h3>
                                     <p>
-                                        Timepieces that make a statement up to <strong>42% off</strong>
+                                        Timepieces that make a statement up to <strong>40% off</strong>
                                     </p>
                                     <p>
                                         <a href="#" class="btn btn-lg btn-primary" role="button">
@@ -229,7 +231,7 @@
                                 <div class="carousel-caption">
                                     <h3>Sell to get what you love</h3>
                                     <p>
-                                        Timepieces that make a statement up to <strong>43% off</strong>
+                                        Timepieces that make a statement up to <strong>40% off</strong>
                                     </p>
                                     <p>
                                         <a href="#" class="btn btn-lg btn-primary" role="button">
@@ -246,7 +248,7 @@
                                 <div class="carousel-caption">
                                     <h3>Sell to get what you love</h3>
                                     <p>
-                                        Timepieces that make a statement up to <strong>44% off</strong>
+                                        Timepieces that make a statement up to <strong>40% off</strong>
                                     </p>
                                     <p>
                                         <a href="#" class="btn btn-lg btn-primary" role="button">
@@ -263,7 +265,7 @@
                                 <div class="carousel-caption">
                                     <h3>Sell to get what you love</h3>
                                     <p>
-                                        Timepieces that make a statement up to <strong>45% off</strong>
+                                        Timepieces that make a statement up to <strong>40% off</strong>
                                     </p>
                                     <p>
                                         <a href="#" class="btn btn-lg btn-primary" role="button">
@@ -280,7 +282,7 @@
                                 <div class="carousel-caption">
                                     <h3>Sell to get what you love</h3>
                                     <p>
-                                        Timepieces that make a statement up to <strong>46% off</strong>
+                                        Timepieces that make a statement up to <strong>40% off</strong>
                                     </p>
                                     <p>
                                         <a href="#" class="btn btn-lg btn-primary" role="button">
@@ -300,94 +302,170 @@
     <section id="info">
         
         <div class="container">
-            <div class="row" style="padding-top: 30px">
-                <div class="col-md-12 col-sm-12 col-xs-12">                    
-                    <div class="list-group list-group-horizontal">
-                        <ul class="list-inline inline-info">
-                            <li>
-                                <a href="#" class="list-group-item" id="left-radius">
-                                    <h4>
-                                        <i class="fa fa-truck fa-flip-horizontal fa-2x"></i>
-                                        Free Delivery
-                                    </h4>
-                                    <p>from $50</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-group-item">
-                                    <h4>
-                                        <i class="fa fa-thumbs-up fa-2x"></i>
-                                        99% Customer
-                                    </h4>
-                                    <p>Feedbacks</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-group-item">
-                                    <h4>
-                                        <i class="fa fa-refresh fa-2x"></i>
-                                        365 Days
-                                    </h4>
-                                    <p>for free return</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-group-item">
-                                    <h4>
-                                        <i class="fa fa-credit-card fa-2x"></i>
-                                        Payment
-                                    </h4>
-                                    <p>Secure System</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-group-item" id="right-radius">
-                                    <h4>
-                                        <i class="fa fa-tag fa-flip-horizontal fa-2x"></i>
-                                        Only Best
-                                    </h4>
-                                    <p>Brands</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div> <!-- end list-group -->
+            <div class="container text-center">
+                <div class="row" style="padding-top: 40px">
+                    <div class="col-md-12 col-sm-12 col-xs-12">                    
+                        <div class="list-group list-group-horizontal">
+                            <ul class="list-inline inline-info">
+                                <li>
+                                    <a href="#" class="list-group-item" id="left-radius">
+                                        <h4>
+                                            <i class="fa fa-truck fa-flip-horizontal fa-2x"></i>
+                                            Free Delivery
+                                        </h4>
+                                        <p>from $50</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-group-item">
+                                        <h4>
+                                            <i class="fa fa-thumbs-up fa-2x"></i>
+                                            99% Customer
+                                        </h4>
+                                        <p>Feedbacks</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-group-item">
+                                        <h4>
+                                            <i class="fa fa-refresh fa-2x"></i>
+                                            365 Days
+                                        </h4>
+                                        <p>for free return</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-group-item">
+                                        <h4>
+                                            <i class="fa fa-credit-card fa-2x"></i>
+                                            Payment
+                                        </h4>
+                                        <p>Secure System</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-group-item" id="right-radius">
+                                        <h4>
+                                            <i class="fa fa-tag fa-flip-horizontal fa-2x"></i>
+                                            Only Best
+                                        </h4>
+                                        <p>Brands</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> <!-- end list-group -->
+                    </div>
                 </div>
-            </div>
+            </div> <!-- end container -->
+
+            <!-- Product frames -->
+            <div class="container">
+                <div class="row" style="padding-top: 20px">
+                    <div class="col-md-6 col-sm-4 col-xs-12" id="prod-frame">
+                        <div class="img-frame">
+                            <div class="frame-img">
+                                <img src="http://placehold.it/250x180" alt="Left Item Frame">
+                            </div>
+                            <p>Catch hottest<br/><strong>DEALS</strong> in cameras<br/>category</p>
+                            <a href="#">
+                                <b>Shop now</b>
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-1x"></i>
+                                    <i class="fa fa-angle-right fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-4 col-xs-12" id="prod-frame">
+                        <div class="img-frame">
+                            <div class="frame-img">
+                                <img src="http://placehold.it/250x180" alt="Right Item Frame">
+                            </div>
+                            <p>Tablets,<br/>Smartphones<br/><strong>AND MORE</strong><br/></p>
+                            <p>From</p>
+                            <a href="#">
+                                <b><i class="fa fa-usd"></i>749,99</b>
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-1x"></i>
+                                    <i class="fa fa-angle-right fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>           
+                </div>
+            </div> <!-- end container -->
         </div> <!-- end container -->
         
     </section> <!-- end info -->
 
-    <section id="products">
-        
-    </section>
+    <section id="products-top">
 
-    <section id="laptop-computer">
-        
-    </section>
+        <div class="container">
+            
+        </div> <!-- end container -->
+
+    </section> <!-- end products-top -->
+
+    <section id="banner-mid">
+
+        <div class="container-fluid">
+
+        </div> <!-- end container-fluid -->
+
+    </section> <!-- end banner-mid -->
+
+    <section id="products-mid">
+
+        <div class="container">
+
+        </div> <!-- end container -->
+
+    </section> <!-- end products-mid -->
 
     <section id="bestseller">
-        
-    </section>
 
-    <section id="top-month">
-        
-    </section>
+        <div class="container-fluid">
 
-    <section id="brands">
-        
-    </section>
+            <div class="container">
+                
+            </div> <!-- end container -->
 
-    <secton id="product-bottom">
-        
-    </secton>
+        </div> <!-- end container-fluid -->
 
-    <section id="newsletter">
-        
-    </section>
+    </section> <!-- end bestseller -->
+
+    <section id="top-categories-month">
+
+        <div class="container">
+            
+        </div> <!-- end container -->
+
+    </section> <!-- end top-categories-month -->
+
+    <secton id="products-bottom">
+
+        <div class="container">
+            
+        </div> <!-- end container -->
+
+    </secton> <!-- end products-bottom -->
 
     <footer id="footer">
-        
-    </footer>
+
+        <div class="container-fluid">
+            
+        </div> <!-- end container-fluid -->
+
+        <div class="container">
+            
+        </div> <!-- end container -->
+
+        <div class="container-fluid">
+            
+        </div> <!-- end container-fluid -->
+
+    </footer> <!-- end footer -->
 
     <!-- JQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/JQUERY/jquery-3.1.1.min.js"></script>
