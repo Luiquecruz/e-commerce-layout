@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">''
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head -->
 
     <title>Electro.</title>
@@ -21,67 +21,78 @@
 <body>
 
     <header id="header">
-
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        
+        <nav class="navbar navbar-inverse navbar-top" role="navigation">
             <div class="container">
-                <div class="top-header navbar-collapse navbar-left">
-                    <ul class="menu-top-header list-inline">
-                        <li class="mth-item phone">
-                            <i class="fa fa-phone"></i>
-                            +060 (800) 801-858
-                        </li>
-                        <li class="mth-item email">
-                            <i class="fa fa-envelope-o"></i>
-                            info@electro.com
-                        </li>
-                    </ul>
-                </div> <!-- end top-header -->
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+                        <div class="top-header navbar-collapse navbar-left">
+                            <ul class="menu-top-header list-inline">
+                                <li class="mth-item phone">
+                                    <i class="fa fa-phone"></i>
+                                    +060 (800) 801-858
+                                </li>
+                                <li class="mth-item email">
+                                    <i class="fa fa-envelope-o"></i>
+                                    info@electro.com
+                                </li>
+                            </ul>
+                        </div> <!-- end top-header -->
+                    </div>
 
-                <div class="top-header navbar-collapse navbar-right">
-                    <ul class="menu-top-header list-inline">
-                        <li class="mth-item locator">
-                            <a href="#">
-                                <i class="fa fa-map-marker"></i>
-                                Store Locator
-                            </a> |
-                        </li>
-                        <li class="mth-item track">
-                            <a href="#">
-                                <i class="fa fa-truck fa-flip-horizontal"></i>
-                                Track Your Order
-                            </a> |
-                        </li>
-                        <li class="mth-item dollar">
-                            <i class="fa fa-usd"></i>
-                            Dollar (US) |
-                        </li>
-                        <li class="mth-item login">
-                            <i class="fa fa-user"></i>
-                            <a href="#">Register</a> or <a href="#">Sign in</a>
-                        </li>
-                    </ul>
-                </div> <!-- end top-header -->
+                    <div class="col-md-8 col-sm-6 col-xs-12 text-center">
+                        <div class="top-header navbar-collapse navbar-right">
+                            <ul class="menu-top-header list-inline">
+                                <li class="mth-item locator">
+                                    <a href="#">
+                                        <i class="fa fa-map-marker"></i>
+                                        Store Locator
+                                    </a> |
+                                </li>
+                                <li class="mth-item track">
+                                    <a href="#">
+                                        <i class="fa fa-truck fa-flip-horizontal"></i>
+                                        Track Your Order
+                                    </a> |
+                                </li>
+                                <li class="mth-item dollar">
+                                    <i class="fa fa-usd"></i>
+                                    Dollar (US) |
+                                </li>
+                                <li class="mth-item login">
+                                    <i class="fa fa-user"></i>
+                                    <a href="#">Register</a> or <a href="#">Sign in</a>
+                                </li>
+                            </ul>
+                        </div> <!-- end top-header -->
+                    </div>
+                </div>
             </div> <!-- end container -->
-        </nav>          
+        </nav>
 
-        <div class="container text-center">
-            <div class="row">
-                <nav class="navbar">
-                    <div class="collapse navbar-collapse" id="search-box">  
-                        <ul class="list-inline">            
-                            <li>
-                                <h1 id="logo">
-                                    <a href="index.html"><strong>electro</strong><span id="dot">.</span></a>
+        <div class="container-fuid text-center">
+            <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                
+                    <ul class="list-inline">
+                        <li>
+                            <div class="logo">
+                                <h1>
+                                    <a href="index.html">
+                                        <strong>electro</strong><span id="dot">.</span>
+                                    </a>
                                 </h1>
-                            </li>   
-                            <li>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="search-box">
+                                <!-- search-bar -->
                                 <form class="navbar-form navbar-left">
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Search for products">
                                     </div>
-                                </form> 
-                            </li>       
-                            <li>
+                                </form>
+                                <!-- dropdown -->
                                 <ul class="nav navbar-nav">
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
@@ -105,57 +116,63 @@
                                             <li><a href="#">Accesories</a></li>
                                         </ul>
                                     </li> <!-- end dropdown -->
-                                </ul>
-                            </li>
-                            <li>
+                                </ul>                        
+                                <!-- submit -->
                                 <button type="submit" class="btn btn-default">
-                                    <i class="fa fa-search fa-2x"></i>
+                                     <i class="fa fa-search fa-2x"></i>
                                 </button>
-                            </li>
-                            <li>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="store-status-icons">
                                 <ul class="list-inline">
                                     <li><a href="#"><i class="fa fa-refresh fa-2x"></i></a></li>
                                     <li><a href="#"><i class="fa fa-heart-o fa-2x"></i></a></li>
                                     <li><a href="#"><i class="fa fa-shopping-bag fa-2x"></i></a></li>
                                     <li><i class="fa fa-usd"> 3 215.99</i></li>
                                 </ul>
-                            </li>
-                        </ul>
-                    </div> <!-- end navbar-collapse -->
-                </nav>
-            </div> <!-- end row -->
-        </div> <!-- end container -->
+                            </div>
+                        </li>
+                    </ul>
+                
+                </div>   
+            </div>
+        </div> <!-- end container-fluid -->
         
         <nav class="navbar navbar-inverse" role="navigation">
-            <div class="container text-center">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 text-center">
+                        <!-- Grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+                            <ul class="nav navbar-nav list-inline">
+                                <li><a href="#">TV &amp; Audio</a></li>
+                                <li><a href="#">RTV</a></li>
+                                <li><a href="#">Computers</a></li>
+                                <li><a href="#">Games &amp; Consoles</a></li>
+                                <li><a href="#">Gadgets</a></li>
+                                <li><a href="#">Phones &amp; Tablets</a></li>
+                                <li><a href="#">GPS &amp; Car Audio</a></li>
+                                <li><a href="#">Accesories</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-                    <ul class="nav navbar-nav list-inline">
-                        <li><a href="#">TV &amp; Audio</a></li>
-                        <li><a href="#">RTV</a></li>
-                        <li><a href="#">Computers</a></li>
-                        <li><a href="#">Games &amp; Consoles</a></li>
-                        <li><a href="#">Gadgets</a></li>
-                        <li><a href="#">Phones &amp; Tablets</a></li>
-                        <li><a href="#">GPS &amp; Car Audio</a></li>
-                        <li><a href="#">Accesories</a></li>
-                    </ul>
-                </div> <!-- navbar-collapse -->
             </div> <!-- end container-fluid -->
-        </nav>     
+        </nav>
 
     </header> <!-- end header -->
 
@@ -244,7 +261,7 @@
                             </div>
                         </div> <!-- end Item -->
 
-                        <div class="item img-responsive" >
+                        <div class="item img-responsive">
                             <img class="carousel-bg" src="http://placehold.it/1920x600" alt="Fifth Slide">
                             <div class="container">
                                 <div class="carousel-caption">
@@ -280,14 +297,70 @@
 
                     </div> <!-- end carousel-inner -->
                 </div> <!-- end carousel -->
-            </div> <!-- end row -->
+            </div>
         </div> <!-- end container-fluid -->
         
     </section> <!-- end banner -->
 
     <section id="info">
         
-    </section>
+        <div class="container">
+            <div class="row" style="padding-top: 30px">
+                <div class="col-md-12 col-sm-12 col-xs-12">                    
+                    <div class="list-group list-group-horizontal">
+                        <ul class="list-inline inline-info">
+                            <li>
+                                <a href="#" class="list-group-item" id="left-radius">
+                                    <h4>
+                                        <i class="fa fa-truck fa-flip-horizontal fa-2x"></i>
+                                        Free Delivery
+                                    </h4>
+                                    <p>from $50</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="list-group-item">
+                                    <h4>
+                                        <i class="fa fa-thumbs-up fa-2x"></i>
+                                        99% Customer
+                                    </h4>
+                                    <p>Feedbacks</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="list-group-item">
+                                    <h4>
+                                        <i class="fa fa-refresh fa-2x"></i>
+                                        365 Days
+                                    </h4>
+                                    <p>for free return</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="list-group-item">
+                                    <h4>
+                                        <i class="fa fa-credit-card fa-2x"></i>
+                                        Payment
+                                    </h4>
+                                    <p>Secure System</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="list-group-item" id="right-radius">
+                                    <h4>
+                                        <i class="fa fa-tag fa-flip-horizontal fa-2x"></i>
+                                        Only Best
+                                    </h4>
+                                    <p>Brands</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- end list-group -->
+                </div>
+            </div>
+        </div> <!-- end container -->
+        
+    </section> <!-- end info -->
 
     <section id="products">
         

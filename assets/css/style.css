@@ -1,6 +1,4 @@
-body {
-	padding-top: 50px;
-}
+// General styling
 
 li {
 	list-style: none;
@@ -15,6 +13,7 @@ nav.navbar{
 
 nav.navbar-inverse {
 	min-height: 10px;
+	max-height: 55px;
 	margin-bottom: 0;
 	background-color: #fff;
 	border-color: #cecece;
@@ -29,7 +28,7 @@ li.mth-item {
 
 }
 
-// Carousel Style
+// Carousel style
 
 div.item img.carousel-bg {
 	position: relative;
@@ -39,4 +38,32 @@ div.item img.carousel-bg {
 div.carousel-caption {
 	position: absolute;
 	text-align: left;
+}
+
+// Info section style
+
+div.list-group {
+	padding: 10px 15px;
+}
+
+a.list-group-item {
+	margin-bottom: 0;
+	margin-left:-15px;
+	margin-right: 0;
+	padding: 5px 35px;
+}
+
+a.list-group-item:first-child {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+a#left-radius {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+a#right-radius {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
