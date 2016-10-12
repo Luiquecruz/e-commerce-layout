@@ -85,41 +85,49 @@
                         <li>
                             <div class="search-box">
                                 <!-- search-bar -->
-                                <form class="navbar-form navbar-left">
+                                <form class="form-inline">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Search for products">
-                                    </div>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <input type="text" class="form-control" placeholder="Search for products">
+                                            </div> <!-- end input-group-addon -->
+                                            <div class="input-group-addon">
+                                                <!-- dropdown -->
+                                                <ul class="nav navbar-nav">
+                                                    <li class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                                            All Categories <i class="fa fa-angle-down"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="#">TV &amp; Audio</a></li>
+                                                            <li class="divider" role="separator"></li>
+                                                            <li><a href="#">RTV</a></li>
+                                                            <li class="divider" role="separator"></li>
+                                                            <li><a href="#">Computers</a></li>
+                                                            <li class="divider" role="separator"></li>
+                                                            <li><a href="#">Games &amp; Consoles</a></li>
+                                                            <li class="divider" role="separator"></li>
+                                                            <li><a href="#">Gadgets</a></li>
+                                                            <li class="divider" role="separator"></li>
+                                                            <li><a href="#">Phones &amp; Tablets</a></li>
+                                                            <li class="divider" role="separator"></li>
+                                                            <li><a href="#">GPS &amp; Car Audio</a></li>
+                                                            <li class="divider" role="separator"></li>
+                                                            <li><a href="#">Accesories</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul> <!-- end dropdown -->
+                                            </div> <!-- end input-group-addon -->
+                                            <div class="input-group-addon">
+                                                <!-- submit -->
+                                                <button type="submit" class="btn btn-default">
+                                                     <i class="fa fa-search fa-2x"></i>
+                                                </button>
+                                            </div> <!-- end input-group-addon -->
+                                        </div>
+                                    </div> <!-- end form-group -->
                                 </form>
-                                <!-- dropdown -->
-                                <ul class="nav navbar-nav">
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                                            All Categories <i class="fa fa-angle-down"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">TV &amp; Audio</a></li>
-                                            <li class="divider" role="separator"></li>
-                                            <li><a href="#">RTV</a></li>
-                                            <li class="divider" role="separator"></li>
-                                            <li><a href="#">Computers</a></li>
-                                            <li class="divider" role="separator"></li>
-                                            <li><a href="#">Games &amp; Consoles</a></li>
-                                            <li class="divider" role="separator"></li>
-                                            <li><a href="#">Gadgets</a></li>
-                                            <li class="divider" role="separator"></li>
-                                            <li><a href="#">Phones &amp; Tablets</a></li>
-                                            <li class="divider" role="separator"></li>
-                                            <li><a href="#">GPS &amp; Car Audio</a></li>
-                                            <li class="divider" role="separator"></li>
-                                            <li><a href="#">Accesories</a></li>
-                                        </ul>
-                                    </li> <!-- end dropdown -->
-                                </ul>                        
-                                <!-- submit -->
-                                <button type="submit" class="btn btn-default">
-                                     <i class="fa fa-search fa-2x"></i>
-                                </button>
-                            </div>
+                            </div> <!-- end search-box -->
                         </li>
                         <li>
                             <div class="store-status-icons">
@@ -453,13 +461,41 @@
 
     <footer id="footer">
 
+        <div class="container-fluid text-center">
+            <ul class="list-inline inline-info" id="newsletters">
+                <li>
+                    <span>
+                        <i class="fa fa-paper-plane-o"></i><h2>Sign up to Newsletter</h2>
+                    </span>
+                </li>
+                <li>
+                    <p>
+                        ... and receive
+                        <b>
+                            <i class="fa fa-usd">20</i>
+                            coupon for first shopping.
+                        </b>
+                    </p>
+                </li>
+                <li>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for=""></label>
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Enter your email address">
+                                <div class="input-group-addon">
+                                    <input type="submit" value="Sign Up"></input>
+                                </div>
+                            </div> <!-- end input-group -->
+                        </div> <!-- end form-group -->
+                    </form>
+                </li>
+            </ul>
+        </div> <!-- end container-fluid -->
+
         <div class="container-fluid">
             
         </div> <!-- end container-fluid -->
-
-        <div class="container">
-            
-        </div> <!-- end container -->
 
         <div class="container-fluid">
             
