@@ -87,3 +87,71 @@ div.img-frame {
 div.img-frame img {
 	float: left;
 }
+
+// Products Top box style
+
+div#custom-carousel {
+	padding-top: 40px;
+}
+
+div#custom-carousel .controls li {
+    max-width: 100px
+}
+
+div#custom-carousel .controls li.active {
+    border-bottom: 5px solid #ffcc00;
+}
+
+div#custom-carousel .controls a {
+    overflow: hidden;
+    display: block;
+    font-size: 10px;
+    margin-top: 5px;
+    font-weight: bold
+}
+
+div#custom-carousel .controls {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    text-align: left;
+    position: relative;
+    
+}
+
+div.carousel #trail {
+	color: #777;
+	margin: 0;
+	padding: 0;
+}
+
+div.carousel-inner #box-grid {
+	padding: 0;
+	margin: 0;
+}
+
+div#custom-carousel .item {
+    padding: 10px 0;
+}
+
+div#custom-carousel .item p,b {
+	color: #3498db;
+}
+
+div#custom-carousel .item h6 {
+	color: #888;
+}
+
+div.carousel-inner #cart-item-dicount {
+	padding-left: 30%;
+}
+
+div.carousel-inner #cart-item-999p {
+	padding-left: 50%;
+}
+
+div.carousel-inner #cart-item {
+	padding-left: 55%;
+}
