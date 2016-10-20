@@ -25,7 +25,7 @@
         <nav class="navbar navbar-inverse navbar-top" role="navigation">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+                    <div class="col-md-4 text-center">
                         <div class="top-header navbar-collapse navbar-left">
                             <ul class="menu-top-header list-inline">
                                 <li class="mth-item phone">
@@ -39,28 +39,30 @@
                             </ul>
                         </div> <!-- end top-header -->
                     </div>
-                    <div class="col-md-8 col-sm-6 col-xs-12 text-center">
+                    <div class="col-md-8 text-center">
                         <div class="top-header navbar-collapse navbar-right">
                             <ul class="menu-top-header list-inline">
-                                <li class="mth-item locator">
+                                <li class="mth-item locator vr">
                                     <a href="#">
                                         <i class="fa fa-map-marker"></i>
                                         Store Locator
                                     </a> |
                                 </li>
-                                <li class="mth-item track">
+                                <li class="mth-item track vr">
                                     <a href="#">
                                         <i class="fa fa-truck fa-flip-horizontal"></i>
                                         Track Your Order
                                     </a> |
                                 </li>
-                                <li class="mth-item dollar">
-                                    <i class="fa fa-usd"></i>
-                                    Dollar (US) |
+                                <li class="mth-item dollar vr">
+                                   <a href="#">
+                                        <i class="fa fa-usd"></i>
+                                        Dollar (US)
+                                    </a> |
                                 </li>
                                 <li class="mth-item login">
                                     <i class="fa fa-user"></i>
-                                    <a href="#">Register</a> or <a href="#">Sign in</a>
+                                    <a href="#" id="register">Register</a> or <a href="#" id="sign-in">Sign in</a>
                                 </li>
                             </ul>
                         </div> <!-- end top-header -->
@@ -69,85 +71,88 @@
             </div> <!-- end container -->
         </nav>
 
-        <div class="container-fuid text-center">
-            <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <ul class="list-inline">
-                        <li>
-                            <div class="logo">
-                                <h1>
-                                    <a href="index.html">
-                                        <strong>electro</strong><span id="dot">.</span>
-                                    </a>
-                                </h1>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="search-box">
-                                <!-- search-bar -->
-                                <form class="form-inline">
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <input type="text" class="form-control" placeholder="Search for products">
-                                            </div> <!-- end input-group-addon -->
-                                            <div class="input-group-addon">
-                                                <!-- dropdown -->
-                                                <ul class="nav navbar-nav">
-                                                    <li class="dropdown">
-                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                                                            All Categories <i class="fa fa-angle-down"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a href="#">TV &amp; Audio</a></li>
-                                                            <li class="divider" role="separator"></li>
-                                                            <li><a href="#">RTV</a></li>
-                                                            <li class="divider" role="separator"></li>
-                                                            <li><a href="#">Computers</a></li>
-                                                            <li class="divider" role="separator"></li>
-                                                            <li><a href="#">Games &amp; Consoles</a></li>
-                                                            <li class="divider" role="separator"></li>
-                                                            <li><a href="#">Gadgets</a></li>
-                                                            <li class="divider" role="separator"></li>
-                                                            <li><a href="#">Phones &amp; Tablets</a></li>
-                                                            <li class="divider" role="separator"></li>
-                                                            <li><a href="#">GPS &amp; Car Audio</a></li>
-                                                            <li class="divider" role="separator"></li>
-                                                            <li><a href="#">Accesories</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul> <!-- end dropdown -->
-                                            </div> <!-- end input-group-addon -->
-                                            <div class="input-group-addon">
-                                                <!-- submit -->
-                                                <button type="submit" class="btn btn-default">
-                                                     <i class="fa fa-search fa-2x"></i>
-                                                </button>
-                                            </div> <!-- end input-group-addon -->
-                                        </div>
-                                    </div> <!-- end form-group -->
-                                </form>
-                            </div> <!-- end search-box -->
-                        </li>
-                        <li>
-                            <div class="store-status-icons">
-                                <ul class="list-inline">
-                                    <li><a href="#"><i class="fa fa-refresh fa-2x"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-heart-o fa-2x"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-shopping-bag fa-2x"></i></a></li>
-                                    <li><i class="fa fa-usd"> 3 215.99</i></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>   
+        <div class="container-fluid text-center">
+            <div class="row">
+                <ul class="list-inline">
+                  <div class="container" id="mid-header">
+                    <li>
+                        <div class="col-md-3 logo">
+                            <h1>
+                                <a href="index.html">
+                                    electro<span id="dot">.</span>
+                                </a>
+                            </h1>
+                        </div> <!-- End Logo -->
+                    </li>
+                    <li>
+                        <div class="col-md-6 search-box">
+                            <!-- search-bar -->
+                            <form class="form-inline">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <input type="text" id="search-prod" class="form-control" placeholder="Search for products">
+                                        </div> <!-- end input-group-addon -->
+                                        <div class="input-group-addon">
+                                            <!-- dropdown -->
+                                            <ul class="nav navbar-nav">
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                                        All Categories <i class="fa fa-angle-down"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">TV &amp; Audio</a></li>
+                                                        <li class="divider" role="separator"></li>
+                                                        <li><a href="#">RTV</a></li>
+                                                        <li class="divider" role="separator"></li>
+                                                        <li><a href="#">Computers</a></li>
+                                                        <li class="divider" role="separator"></li>
+                                                        <li><a href="#">Games &amp; Consoles</a></li>
+                                                        <li class="divider" role="separator"></li>
+                                                        <li><a href="#">Gadgets</a></li>
+                                                        <li class="divider" role="separator"></li>
+                                                        <li><a href="#">Phones &amp; Tablets</a></li>
+                                                        <li class="divider" role="separator"></li>
+                                                        <li><a href="#">GPS &amp; Car Audio</a></li>
+                                                        <li class="divider" role="separator"></li>
+                                                        <li><a href="#">Accesories</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul> <!-- end dropdown -->
+                                        </div> <!-- end input-group-addon -->
+                                        <div class="input-group-addon">
+                                            <!-- submit -->
+                                            <button type="submit" class="btn btn-default">
+                                                    <i class="fa fa-search"></i>
+                                            </button>
+                                        </div> <!-- end input-group-addon -->
+                                    </div> <!-- End input-group -->
+                                </div> <!-- end form-group -->
+                            </form>
+                        </div> <!-- end search-box -->
+                    </li>
+                    <li class="col-md-3 fix-left">
+                        <div class="store-status-icons">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+                                <li>
+                                    <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                    <span id="notifications">4</span>
+                                </li>
+                                <li><i class="fa fa-usd"></i> <span id="bag-value">3 215.99</span></li>
+                            </ul>
+                        </div> <!-- End Store-status-icon -->
+                    </li>
+                  </div> <!-- End Container -->
+                </ul> <!-- End list-inline -->
             </div>
         </div> <!-- end container-fluid -->
         
         <nav class="navbar navbar-inverse" id="menu" role="navigation">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 text-center">
+                    <div class="col-lg-12 col-md-12">
                         <!-- Grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
@@ -368,7 +373,7 @@
 
             <!-- Product frames -->
             <div class="container">
-                <div class="row" style="padding-top: 20px">
+                <div class="row">
                     <div class="col-md-6 col-sm-4 col-xs-12" id="prod-frame">
                         <div class="img-frame">
                             <div class="frame-img">
@@ -390,8 +395,7 @@
                             <div class="frame-img">
                                 <img src="http://placehold.it/250x180" alt="Right Item Frame">
                             </div>
-                            <p>Tablets,<br/>Smartphones<br/><strong>AND MORE</strong><br/></p>
-                            <p>From</p>
+                            <p>Tablets,<br/>Smartphones<br/><strong>AND MORE</strong><br/>From</p>
                             <a href="#">
                                 <b><i class="fa fa-usd"></i>749,99</b>
                                 <span class="fa-stack fa-lg">
@@ -766,7 +770,7 @@
                                 <div class="input-group">
                                     <input type="email" class="form-control" placeholder="Enter your email address">
                                     <div class="input-group-addon">
-                                        <input type="submit" value="Sign Up"></input>
+                                        <input type="submit" value="Sign Up"/>
                                     </div>
                                 </div> <!-- end input-group -->
                             </div> <!-- end form-group -->

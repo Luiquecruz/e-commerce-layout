@@ -1,14 +1,64 @@
-// General styling
+/* Note: Don't delete this comment!
+Original Color Theme for the page by Luique Cruz:
+
+       Yellow of the bars & icons #FFD601
+White for the bestsellers section #F2F4F4
+   Light-Blue for the carousel h4 #52C5F0
+         Blue for the item titles #0366BD
+     Black for page font and logo #343e49
+*/
+
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'lato', sans-serif;
+}
+
+/* Clear Bootstrap link style */
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
 
 li {
 	list-style: none;
 }
 
-// top-header bar style
+/* Custom Align */
 
+.vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* top-header bar style */
 
 nav.navbar{
 	margin-bottom: 0;
+    border-radius: 0;
+    border-right: none;
+    border-left: none;
 }
 
 nav.navbar-inverse {
@@ -16,7 +66,7 @@ nav.navbar-inverse {
 	max-height: 55px;
 	margin-bottom: 0;
 	background-color: #fff;
-	border-color: #cecece;
+	border-color: #ddd;
 }
 
 ul.menu-top-header {
@@ -25,9 +75,193 @@ ul.menu-top-header {
 
 li.mth-item {
 	margin-top: 10px;
+    color: #343e49;
 }
 
-// Carousel 
+li.mth-item a {
+    margin-right: 10px;
+    color: #343e49;
+}
+
+li.mth-item i {
+    margin-right: 10px;
+    color: #343e49;
+    font-size: 16px;
+}
+
+li.mth-item.vr {
+    color: #aaa;
+    font-weight: ;
+}
+
+li.mth-item i.fa-phone {
+    font-weight: 600;
+    color: #FFD601;
+}
+
+li.mth-item i.fa-envelope-o {
+    font-weight: 600;
+    color: #FFD601;
+}
+
+li.login {
+    color: #aaa;
+}
+
+a#register {
+    margin-right: 2px;
+}
+
+a#sign-in {
+    margin-left: 2px;
+}
+
+/* mid-header styling */
+
+div.container-fluid .list-inline {
+    margin-bottom: 0;
+    border: none;
+}
+
+div#mid-header {
+    padding:  15px 0 20px 0;
+    margin: 0 auto;
+}
+
+/* Logo */
+div.container-fluid .list-inline .logo {
+    display: block;
+    left: -20px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+div.container-fluid .list-inline .logo a {
+    font-weight: 900;
+    font-size: 52px;
+    color: #444;
+}
+
+div.container-fluid .list-inline .logo a #dot {
+    color: #FFD601;
+}
+
+/* Seach-box */
+
+div.search-box {
+    margin-top: 15px;
+    margin-right: 0;
+    padding: 0;
+}
+
+div.search-box .input-group-addon:first-child {
+    width: 450px;
+    border: 3px solid #FFD601;
+    border-right: none;
+    border-radius: 30px 0 0 30px;
+}
+
+div.search-box .input-group-addon #search-prod {
+    font-size: 16px;
+    margin-left: 10px;
+    border: none;
+    box-shadow: none;
+}
+
+div.search-box .input-group-addon {
+    height: 20px;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 0;
+    border: 3px solid #FFD601;
+    border-radius: 30px;
+    border-left: none;
+    
+    background-color: #fff;
+}
+
+div.search-box .input-group-addon .dropdown-toggle {
+    color: #343e49;
+    border: none;
+    background-color: #fff;
+}
+
+div.search-box .input-group-addon .dropdown-toggle:hover {
+    background-color: #fff;
+    border: none;
+}
+
+div.search-box .input-group-addon:last-child {
+    padding: 10px;
+    margin-right: 0;
+    border: 3px solid #FFD601;
+    border-radius: 0 30px 30px 0;
+    background-color: #FFD601;
+}
+
+div.search-box .input-group-addon .btn-default {
+    border: none;
+    padding:0;
+    background-color: #FFD601;
+}
+
+div.search-box .input-group-addon .btn-default .fa-search {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+/* store-status-icons */
+
+ul.list-inline li.fix-left {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+div.store-status-icons {
+    padding: 0;
+    margin-left: 0;;
+    margin-top: 30px;
+}
+
+div.store-status-icons li {
+    display: inline;
+    margin-left: 20px;
+    padding-left: 0;
+    padding: 0;
+}
+
+div.store-status-icons a {
+    font-weight: 300;
+    color: #343e49;
+}
+
+div.store-status-icons i {
+    font-size: 20px;
+}
+
+div.store-status-icons #notifications {
+    border-radius: 30px;
+    background-color: #FFD601;
+    color: #343e49;
+    font-weight: 900;
+    padding: 4px 7px;
+    font-size: 11px;
+    position: relative;
+    top: 4px;
+    left: -12px;
+}
+
+div.store-status-icons .fa-usd {
+    display: inline-block;
+    font-size: 10px;
+}
+
+div.store-status-icons #bag-value {
+    font-size: 20px;
+}
+
+/* Carousel */ 
 
 div.carousel {
 	background: #eee;
@@ -43,7 +277,7 @@ div.carousel-caption {
 	text-align: left;
 }
 
-// Info section style
+/* Info section style */
 
 div.list-group {
 	padding: 10px 15px;
@@ -71,10 +305,10 @@ a#right-radius {
 	border-bottom-right-radius: 10px;
 }
 
-// Frames
+/* Frames */
 
 div#prod-frame {
-	padding: 0;
+    margin-bottom: 40px;
 }
 
 div.img-frame {
@@ -86,9 +320,16 @@ div.img-frame {
 
 div.img-frame img {
 	float: left;
+    margin-right: 10px;
 }
 
-// Products Top box style
+div.img-frame p {
+    font-size: 26px;
+    font-weight: 100;
+    text-align: left;
+}
+
+/* Products Top box style */
 
 div#custom-carousel {
 	padding-top: 40px;
@@ -122,7 +363,7 @@ div#custom-carousel .controls {
 }
 
 div.carousel #trail {
-	color: #777;
+	color: #aaa;
 	margin: 0;
 	padding: 0;
 }
