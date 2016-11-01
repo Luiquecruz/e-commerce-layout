@@ -20,23 +20,7 @@ body {
 
 /* Clear Bootstrap link style */
 
-a {
-    text-decoration: none;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-a:active {
+a, a:link, a:hover, a:visited, a:active {
     text-decoration: none;
 }
 
@@ -54,121 +38,116 @@ li {
 
 /* top-header bar style */
 
-nav.navbar{
+.navbar{
 	margin-bottom: 0;
     border-radius: 0;
     border-right: none;
     border-left: none;
 }
 
-nav.navbar-inverse {
+.navbar-inverse {
 	min-height: 10px;
 	max-height: 55px;
-	margin-bottom: 0;
 	background-color: #fff;
 	border-color: #ddd;
 }
 
-ul.menu-top-header {
+.menu-top-header {
 	list-style: none;
 }
 
-li.mth-item {
+.mth-item {
 	margin-top: 10px;
     color: #343e49;
 }
 
-li.mth-item a {
+.mth-item a {
     margin-right: 10px;
     color: #343e49;
 }
 
-li.mth-item i {
+.mth-item i {
     margin-right: 10px;
     color: #343e49;
     font-size: 16px;
 }
 
-li.mth-item.vr {
+.mth-item.vr {
     color: #aaa;
     font-weight: ;
 }
 
-li.mth-item i.fa-phone {
+.mth-item i, .fa-phone, .fa-envelope-o {
     font-weight: 600;
     color: #FFD601;
 }
 
-li.mth-item i.fa-envelope-o {
-    font-weight: 600;
-    color: #FFD601;
-}
-
-li.login {
+.login {
     color: #aaa;
 }
 
-a#register {
+#register {
     margin-right: 2px;
 }
 
-a#sign-in {
+#sign-in {
     margin-left: 2px;
 }
 
 /* mid-header styling */
 
-div.container-fluid .list-inline {
+.container-fluid .list-inline {
     margin-bottom: 0;
     border: none;
 }
 
-div#mid-header {
+#mid-header {
     padding:  15px 0 20px 0;
     margin: 0 auto;
 }
 
 /* Logo */
-div.container-fluid .list-inline .logo {
+.logo {
     display: block;
     left: -20px;
     margin-left: 0;
     padding-left: 0;
 }
 
-div.container-fluid .list-inline .logo a {
+.logo a {
     font-weight: 900;
     font-size: 52px;
     color: #444;
 }
 
-div.container-fluid .list-inline .logo a #dot {
+.logo a #dot {
     color: #FFD601;
 }
 
 /* Seach-box */
 
-div.search-box {
+.search-box {
     margin-top: 15px;
     margin-right: 0;
     padding: 0;
 }
 
-div.search-box .input-group-addon:first-child {
+.search-box .input-group-addon:first-child {
     width: 450px;
     border: 3px solid #FFD601;
     border-right: none;
     border-radius: 30px 0 0 30px;
 }
 
-div.search-box .input-group-addon #search-prod {
+.search-box .input-group-addon #search-prod {
+    padding: 25px 0 25px 20px;
     font-size: 16px;
-    margin-left: 10px;
     border: none;
     box-shadow: none;
+    border-radius: 30px 0 0 30px;
 }
 
-div.search-box .input-group-addon {
+.search-box .input-group-addon {
     height: 20px;
     padding: 0;
     margin-left: 10px;
@@ -180,18 +159,18 @@ div.search-box .input-group-addon {
     background-color: #fff;
 }
 
-div.search-box .input-group-addon .dropdown-toggle {
+.search-box .input-group-addon .dropdown-toggle {
     color: #343e49;
     border: none;
     background-color: #fff;
 }
 
-div.search-box .input-group-addon .dropdown-toggle:hover {
-    background-color: #fff;
+.search-box .input-group-addon .dropdown-toggle:hover {
+    background-color: #efefef;
     border: none;
 }
 
-div.search-box .input-group-addon:last-child {
+.search-box .input-group-addon:last-child {
     padding: 10px;
     margin-right: 0;
     border: 3px solid #FFD601;
@@ -199,48 +178,49 @@ div.search-box .input-group-addon:last-child {
     background-color: #FFD601;
 }
 
-div.search-box .input-group-addon .btn-default {
+.search-box .input-group-addon .btn-default {
     border: none;
+    margin: 0;
     padding:0;
     background-color: #FFD601;
 }
 
-div.search-box .input-group-addon .btn-default .fa-search {
+.search-box .input-group-addon .fa-search {
     font-size: 25px;
     font-weight: 300;
 }
 
 /* store-status-icons */
 
-ul.list-inline li.fix-left {
+.list-inline li.fix-left {
     display: block;
     padding: 0;
     margin: 0;
 }
 
-div.store-status-icons {
+.store-status-icons {
     padding: 0;
     margin-left: 0;;
     margin-top: 30px;
 }
 
-div.store-status-icons li {
+.store-status-icons li {
     display: inline;
     margin-left: 20px;
     padding-left: 0;
     padding: 0;
 }
 
-div.store-status-icons a {
+.store-status-icons a {
     font-weight: 300;
     color: #343e49;
 }
 
-div.store-status-icons i {
+.store-status-icons i {
     font-size: 20px;
 }
 
-div.store-status-icons #notifications {
+.store-status-icons #notifications {
     border-radius: 30px;
     background-color: #FFD601;
     color: #343e49;
@@ -252,22 +232,61 @@ div.store-status-icons #notifications {
     left: -12px;
 }
 
-div.store-status-icons .fa-usd {
+.store-status-icons .fa-usd {
     display: inline-block;
     font-size: 10px;
 }
 
-div.store-status-icons #bag-value {
+.store-status-icons #bag-value {
     font-size: 20px;
+}
+
+/* Menu */
+
+#menu {
+    padding: 0;
+    margin: 0;
+    background-color: #FFD601;
+    
+}
+
+#menu .collapse {
+    text-align: ;
+    padding: 0;
+}
+
+#menu .navbar-nav li {
+    padding: ;
+    border: 0.5px solid #cead00;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+#menu .navbar-nav li:hover {
+    background-color: #cead00;
+}
+
+#menu .navbar-nav a {
+    font-weight: 600;
+    color: #343e49;
+}
+
+#menu .navbar-nav li:first-child {
+    border-left: none;
+}
+
+#menu .navbar-nav li:last-child {
+    border-right: none;
 }
 
 /* Carousel */ 
 
-div.carousel {
+.carousel {
 	background: #eee;
 }
 
-div.item img.carousel-bg {
+.item img.carousel-bg {
 	max-height: 600px;
 	width: 100%;
 }
