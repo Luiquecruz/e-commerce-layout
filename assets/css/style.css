@@ -317,12 +317,13 @@ li {
 #menu {
     padding: 0;
     margin: 0;
+    border: none;
     background-color: #FFD601;
     
 }
 
 #menu .collapse {
-    text-align: ;
+    border: none;
     padding: 0;
 }
 
