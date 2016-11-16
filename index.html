@@ -18,7 +18,7 @@
     <!-- Font-Awesome -->
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
 </head>
 <body>
 
@@ -142,7 +142,8 @@
                                     <a href="#"><i class="fa fa-shopping-bag"></i></a>
                                     <span id="notifications">4</span>
                                 </li>
-                                <li><i class="fa fa-usd"></i> <span id="bag-value">3 215.99</span></li>
+                                <i class="fa fa-usd usd-top"></i>
+                                <li> <span id="bag-value">3 215.99</span></li>
                             </ul>
                         </div> <!-- End Store-status-icon -->
                     </li>
@@ -303,55 +304,55 @@
 
     <section id="info">
         
-        <div class="container text-center">
+        <div class="container info">
             <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">                    
+                <div class="col-md-12 col-sm-12 col-xs-12">         
                     <div class="list-group list-group-horizontal">
                         <ul class="list-inline inline-info">
-                            <li>
-                                <a href="#" class="list-group-item" id="left-radius">
+                            <li class="list-group-item" id="left-radius">
+                                <span >
+                                    <i class="fa fa-truck fa-flip-horizontal fa-3x"></i>
                                     <h4>
-                                        <i class="fa fa-truck fa-flip-horizontal fa-2x"></i>
                                         Free Delivery
                                     </h4>
                                     <p>from $50</p>
-                                </a>
+                                </span>
                             </li>
-                            <li>
-                                <a href="#" class="list-group-item">
+                            <li class="list-group-item">
+                                <span>
+                                    <i class="fa fa-thumbs-up fa-3x"></i>
                                     <h4>
-                                        <i class="fa fa-thumbs-up fa-2x"></i>
                                         99% Customer
                                     </h4>
                                     <p>Feedbacks</p>
-                                </a>
+                                </span>
                             </li>
-                            <li>
-                                <a href="#" class="list-group-item">
+                            <li class="list-group-item">
+                                <span>
+                                    <i class="fa fa-refresh fa-3x"></i>
                                     <h4>
-                                        <i class="fa fa-refresh fa-2x"></i>
                                         365 Days
                                     </h4>
                                     <p>for free return</p>
-                                </a>
+                                </span>
                             </li>
-                            <li>
-                                <a href="#" class="list-group-item">
+                            <li class="list-group-item">
+                                <span>
+                                    <i class="fa fa-credit-card fa-3x"></i>
                                     <h4>
-                                        <i class="fa fa-credit-card fa-2x"></i>
                                         Payment
                                     </h4>
                                     <p>Secure System</p>
-                                </a>
+                                </span>
                             </li>
-                            <li>
-                                <a href="#" class="list-group-item" id="right-radius">
+                            <li class="list-group-item" id="right-radius">
+                                <span>
+                                    <i class="fa fa-tag fa-flip-horizontal fa-3x"></i>
                                     <h4>
-                                        <i class="fa fa-tag fa-flip-horizontal fa-2x"></i>
                                         Only Best
                                     </h4>
                                     <p>Brands</p>
-                                </a>
+                                </span>
                             </li>
                         </ul>
                     </div> <!-- end list-group -->
@@ -366,15 +367,14 @@
         <!-- Product frames -->
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12" id="prod-frame">
+                <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="img-frame">
-                        <div class="frame-img">
-                            <img src="http://photoh.com.au/images/camera-equipment-1149448_1920_5.jpg" alt="Left Item Frame">
-                        </div>
+                        <img src="http://photoh.com.au/images/camera-equipment-1149448_1920_5.jpg" alt="Left Item Frame">
                         <p>Catch hottest<br/><strong>DEALS</strong> in cameras<br/>category</p>
                         <a href="#">
+                            <br>
                             <b>Shop now</b>
-                            <span class="fa-stack fa-lg">
+                            <span class="fa-stack fa-lg arrow">
                                 <i class="fa fa-circle fa-stack-1x"></i>
                                 <i class="fa fa-angle-right fa-stack-1x fa-inverse"></i>
                             </span>
@@ -382,15 +382,15 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-sm-6 col-xs-12" id="prod-frame">
+                <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="img-frame">
-                        <div class="frame-img">
-                            <img src="http://cdn.ndtv.com/tech/images/micromax_unite2_box_ndtv_small.jpg" alt="Right Item Frame">
-                        </div>
-                        <p>Tablets,<br/>Smartphones<br/><strong>AND MORE</strong><br/>From</p>
+                        <img src="http://cdn.ndtv.com/tech/images/micromax_unite2_box_ndtv_small.jpg" alt="Right Item Frame">
+                        <p>Tablets,<br/>Smartphones<br/><strong>AND MORE</strong><br/></p>
+                        <span id="from">From</span><br>
+                        <i class="fa fa-usd usd-top"></i>
                         <a href="#">
-                            <b><i class="fa fa-usd"></i>749,99</b>
-                            <span class="fa-stack fa-lg">
+                            <b id="price">749<span id="num-top">99</span></b>
+                            <span class="fa-stack fa-lg arrow" id="arrow-right">
                                 <i class="fa fa-circle fa-stack-1x"></i>
                                 <i class="fa fa-angle-right fa-stack-1x fa-inverse"></i>
                             </span>
@@ -492,7 +492,7 @@
                                             <div class="col-md-3" id="box-grid">
                                                 <h6>Cameras</h6>
                                                 <p><b>Widescreen NX Mini F1 apart<br/>SMART NX</b></p>
-                                                <img src="http://shopping.desejoatendido.com.br/shop/static/desejo_images/2014/08/26/camera-digital-semi-profissional-samsung-smart-nx-mini-20-5-mp-com-lente-9mm-wi-fi-full-hd-preta.jpg" class="img-responsive">
+                                                <img src="http://images.samsung.com/is/image/samsung/ae_EV-NX3000BOHM3_000000001_Front_white_thumb?$M-Thumbnail$" class="img-responsive">
                                                 <ul class="list-inline">
                                                     <li>
                                                         <i class="fa fa-usd">559,00</i>
@@ -576,7 +576,7 @@
                                             <div class="col-md-3" id="box-grid">
                                                 <h6>Cameras</h6>
                                                 <p><b>Widescreen NX Mini F1 apart<br/>SMART NX</b></p>
-                                                <img src="http://shopping.desejoatendido.com.br/shop/static/desejo_images/2014/08/26/camera-digital-semi-profissional-samsung-smart-nx-mini-20-5-mp-com-lente-9mm-wi-fi-full-hd-preta.jpg" class="img-responsive">
+                                                <img src="http://images.samsung.com/is/image/samsung/ae_EV-NX3000BOHM3_000000001_Front_white_thumb?$M-Thumbnail$" class="img-responsive">
                                                 <ul class="list-inline">
                                                     <li>
                                                         <i class="fa fa-usd">559,00</i>
@@ -660,7 +660,7 @@
                                             <div class="col-md-3" id="box-grid">
                                                 <h6>Cameras</h6>
                                                 <p><b>Widescreen NX Mini F1 apart<br/>SMART NX</b></p>
-                                                <img src="http://shopping.desejoatendido.com.br/shop/static/desejo_images/2014/08/26/camera-digital-semi-profissional-samsung-smart-nx-mini-20-5-mp-com-lente-9mm-wi-fi-full-hd-preta.jpg" class="img-responsive">
+                                                <img src="http://images.samsung.com/is/image/samsung/ae_EV-NX3000BOHM3_000000001_Front_white_thumb?$M-Thumbnail$" class="img-responsive">
                                                 <ul class="list-inline">
                                                     <li>
                                                         <i class="fa fa-usd">559,00</i>

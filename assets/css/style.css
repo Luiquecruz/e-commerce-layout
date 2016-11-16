@@ -78,8 +78,10 @@ Original Color Theme by Luique Cruz:
     .navbar {
         width: 1199px;
     }
-}    
+}   
+
 /* General styling */
+
 * {
     margin: 0;
     padding: 0;
@@ -178,6 +180,7 @@ li {
 }
 
 /* Logo */
+
 .logo {
     display: block;
     left: -20px;
@@ -282,6 +285,10 @@ li {
     padding: 0;
 }
 
+.store-status-icons li:last-child {
+    margin-left: 10px;
+}
+
 .store-status-icons a {
     font-weight: 300;
     color: #343e49;
@@ -363,67 +370,125 @@ li {
 	width: 100%;
 }
 
-div.carousel-caption {
+.carousel-caption {
 	position: absolute;
 	text-align: left;
 }
 
 /* Info section style */
 
-div.list-group {
-	padding: 10px 15px;
+.info {
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
-a.list-group-item {
-	margin-bottom: 0;
-	margin-left:-15px;
-	margin-right: 0;
-	padding: 5px 35px;
+.list-group-item i {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    font-weight: 100;
+    color: #FFD601;
 }
 
-a.list-group-item:first-child {
-	border-top-left-radius: 0px;
-	border-top-right-radius: 0px;
+.list-group-item:first-child {
+    margin-left: 5px;
+    margin-right: 1px;
 }
 
-a#left-radius {
+.list-group-item {
+    text-align: center;
+	width: 228px;
+    margin-left: -4px;
+}
+
+.list-group-item:last-child {
+    margin-left: -3px;
+}
+
+#left-radius {
 	border-top-left-radius: 10px;
+    border-top-right-radius: 0;
 	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0;
 }
 
-a#right-radius {
+#right-radius {
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0;
 }
 
-/* Frames */
+/* Product Frames Section Style */
 
-div#prod-frame {
+#product-frame {
     margin-bottom: 40px;
 }
 
-div.img-frame {
-	width: 480px;
-	height: 200px;
-	padding: 10px 10px 5px 20px;
-	background-color: #eee;
+.img-frame {
+	width: 555px;
+	height: 230px;
+	padding: 20px 5px 5px 20px;
+	background-color: rgba(245, 245, 245, 0.7);
 }
 
-div.img-frame img {
+.img-frame img {
+    width: 50%;
 	float: left;
-    margin-right: 10px;
+    margin-right: 10%;
+    border-radius: 3px
 }
 
-div.img-frame p {
+.img-frame p {
+    line-height: 30px;
     font-size: 26px;
-    font-weight: 100;
+    font-weight: 300;
     text-align: left;
+}
+
+.img-frame a {
+    color: #FFD601;
+}
+
+.img-frame a b {
+    color: #343e49;
+}
+
+.arrow .fa-angle-right {
+    text-align: center;
+    font-size: 75%;
+}
+
+#from {
+    clear: both;
+    position: absolute;
+    top: 55%;
+}
+
+.usd-top {
+    position: absolute;
+    top: 64%;
+}
+
+#price {
+    font-size: 24px;
+    margin-left: 10px
+}
+
+.img-frame #num-top {
+    position: absolute;
+    top: 62%;
+    font-size: 16px;
+}
+
+#arrow-right {
+    margin-left: 15px;    
 }
 
 /* Products Top box style */
 
 div#custom-carousel {
 	padding-top: 40px;
+    background-color: #fff;
 }
 
 div#custom-carousel .controls li {
