@@ -8,63 +8,10 @@ Original Color Theme by Luique Cruz:
   Black for page font and logo #343e49
 */
 
-/* Media Queries */
-
-@media (max-width: 480px) {
-    
-    .container {width: 479px;}
-    
-    .container-fluid {width: 480px;}
-    
-    .navbar {width: 479px;}
-    
-}
-
-@media (max-width: 720px) {
-    
-    .container {width: 719px;}
-    
-    .container-fluid {width: 720px;}
-    
-    .navbar {width: 719px;}
-    
-} 
-
-@media (max-width: 768px) {
-    
-    .container {width: 767px;}
-    
-    .container-fluid {width: 768px;}
-    
-    .navbar {width: 767px;}
-    
-} 
-
-@media (max-width: 992px) {
-    
-    .container {width: 991px;}
-    
-    .container-fluid {width: 992px;}
-    
-    .navbar {width: 991px;}
-    
-} 
-
-@media (max-width: 1200px) {
-    
-    .container {width: 1199px;}
-    
-    .container-fluid {width: 1200px;}
-    
-    .navbar {width: 1199px;}
-    
-} 
-
 /* General styling */
 
-* {
-    margin: 0;
-    padding: 0;
+html {
+    overflow-x: hidden
 }
 
 body {font-family: 'lato', sans-serif;}
@@ -80,6 +27,7 @@ li {list-style: none;}
 .vertical-align {
     position: relative;
     top: 50%;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -87,55 +35,73 @@ li {list-style: none;}
 
 .usd-top-cart {
     position: absolute;
-    top: 20%;
+    top: 13%;
+    width: 9px;
 }
 
 .usd-top {
     position: absolute;
-    top: 64%;
+    top: 73%;
+    left: 60.6%;
 }
 
 /* top-header bar style */
 
-.navbar{
+.navbar-top {
 	margin-bottom: 0;
     border-radius: 0;
-    border-right: none;
-    border-left: none;
-}
-
-.navbar-inverse {
-	min-height: 10px;
-	max-height: 55px;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    height: 45px;
+    min-height: 10px;
+	max-height: 45px;
 	background-color: #fff;
-	border-color: #ddd;
 }
 
 .mth-item {
-	margin-top: 10px;
+	margin-top: 11px;
     border: 0;
     color: #343e49;
 }
 
 .mth-item a {
     margin-right: 10px;
+    font-weight: 400;
     color: #343e49;
 }
 
 .mth-item i {
-    margin-right: 10px;
+    margin-right: 3px;
     color: #343e49;
     font-size: 16px;
 }
 
-.mth-item.vr {color: #aaa;}
+.usd {
+    font-weight: 900;
+    font-size: 16px;
+    margin-right: 5px;
+}
 
-.mth-item i, .fa-phone, .fa-envelope-o {
-    font-weight: 600;
+.vr {
+    margin-left: 10px;
+    color: #aaa;
+}
+
+.phone i, .email i {
+    margin-right: 5px;
+    font-weight: 900;
     color: #FFD601;
 }
 
-.login {color: #aaa;}
+.phone {
+    margin-right: 15px;
+    font-size: 11.5px;
+}
+
+.login {
+    font-size: 13px;
+    color: #aaa;
+}
 
 #register {margin-right: 2px;}
 
@@ -144,16 +110,23 @@ li {list-style: none;}
 /* mid-header styling */
 
 #mid-header {
-    padding:  35px 0 40px 0;
+    padding:  17px 0 27px 0;
     margin: 0 auto;
 }
 
 /* Logo */
 
+.logo {
+    width: 205px;
+    margin-top: -7px;
+    margin-left: 30px;
+}
+
 .logo a {
     font-weight: 900;
     font-size: 55px;
-    color: #444;
+    letter-spacing: -3.8px;
+    color: #333;
 }
 
 .logo a #dot {color: #FFD601;}
@@ -161,14 +134,16 @@ li {list-style: none;}
 /* Seach-box */
 
 .search-box {
-    margin-top: 15px;
-    margin-right: 0;
+    display: block;
+    margin-top: 20px;
+    margin-right: -10px;
+    margin-left: 75px;
     padding: 0;
 }
 
 .search-box .input-group-addon:first-child {
     width: 450px;
-    border: 3px solid #FFD601;
+    border: 2px solid #FFD601;
     border-right: none;
     border-radius: 30px 0 0 30px;
 }
@@ -186,7 +161,7 @@ li {list-style: none;}
     padding: 0;
     margin-left: 10px;
     margin-right: 0;
-    border: 3px solid #FFD601;
+    border: 2px solid #FFD601;
     border-radius: 30px;
     border-left: none;
     background-color: #fff;
@@ -201,8 +176,7 @@ li {list-style: none;}
 .search-box .input-group-addon .dropdown-toggle:hover {color: #888;}
 
 .search-box .input-group-addon:last-child {
-    padding: 5px;
-    margin-right: 0;
+    padding: 5px 10px;
     border: 3px solid #FFD601;
     border-radius: 0 30px 30px 0;
     background-color: #FFD601;
@@ -213,33 +187,26 @@ li {list-style: none;}
     background-color: #FFD601;
 }
 
-.search-box .input-group-addon .fa-search {
-    font-size: 25px;
-    font-weight: 300;
-}
+.search-box .input-group-addon .fa-search {font-size: 25px;}
 
 /* store-status-icons */
-
-.list-inline li.fix-left {
-    display: block;
-    padding: 0;
-    margin: 0;
-}
 
 .store-status-icons {
     padding: 0;
     margin-left: 0;;
-    margin-top: 30px;
+    margin-top: 38px;
 }
+
+.store-status-icons li:first-child {margin-left: 0;}
 
 .store-status-icons li {
     display: inline;
-    margin-left: 20px;
+    margin-left: 30px;
     padding-left: 0;
     padding: 0;
 }
 
-.store-status-icons li:last-child {margin-left: 10px;}
+.store-status-icons li:last-child {margin-left: 8px;}
 
 .store-status-icons a {
     font-weight: 300;
@@ -262,17 +229,23 @@ li {list-style: none;}
 
 .store-status-icons .fa-usd {
     display: inline-block;
-    font-size: 10px;
+    font-weight: 900;
+    font-size: 8px;
 }
 
-.store-status-icons #bag-value {font-size: 20px;}
+.store-status-icons #bag-value {
+    font-weight: 900;
+    font-size: 15px;
+}
 
 /* Menu */
 
 #menu {
-    padding: 0;
+    width: 100%;
     margin: 0;
-    border: none;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
     background-color: #FFD601;
     
 }
@@ -283,8 +256,8 @@ li {list-style: none;}
 }
 
 #menu .navbar-nav li {
-    padding: 0 10px;
-    border: 0.5px solid #cead00;
+    padding: 7px 7px 0 7px;
+    border: 0.1px solid #cead00;
     border-top: none;
     border-bottom: none;
     border-left: none;
@@ -294,6 +267,8 @@ li {list-style: none;}
 
 #menu .navbar-nav a {
     font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.2px;
     color: #343e49;
 }
 
@@ -309,9 +284,52 @@ li {list-style: none;}
 }
 
 .carousel-caption {
+    display: block;
+    text-transform: uppercase;
 	position: absolute;
 	text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 2.65%;
+}
+
+.carousel-caption h4 {
+    letter-spacing: .4px;
+    text-shadow: none;
+    color: #1696d9;
+}
+
+.carousel-caption p {
+    font-weight: 300;
+    font-size: 400%;
+    color: #191d22;
+}
+
+.carousel-caption strong {
+    font-weight: 900;
+}
+
+.btn-caption {
+    width: 220px;
+    border: 0;
+    border-radius: 10px;
+    text-transform: none;
+    background-color: #FFD601;
+    color: #343e49;
+}
+
+.carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+    background-color: #999;
+    border: none;
+}
+
+.carousel-indicators .active {
+    width: 30px;
+    height: 8px;
+    margin-right: 10px;
+    margin-bottom: 0.5px;
+    background-color: #FFD601;
 }
 
 /* Features section style */
@@ -323,30 +341,45 @@ li {list-style: none;}
 
 .list-group-item i {
     position: absolute;
-    top: 25%;
-    left: 5%;
-    font-weight: 100;
+    top: 30%;
+    left: -2%;
+    padding: 0 25px;
     color: #FFD601;
 }
+
+.list-group-item .feature-title {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+}
+
+.list-group-item .feature-content {
+    font-size: 16px;
+}
+
 
 .list-group-item:first-child {
     margin-left: 5px;
     margin-right: 1px;
+    padding-left: 50px;
 }
 
 .list-group-item {
     text-align: center;
 	width: 228px;
+    height: 100px;
+    padding-top: 25px;
     margin-left: -4px;
 }
 
-.list-group-item:last-child {margin-left: -3px;}
+.list-group-item:last-child {
+    margin-left: -3px; padding-left: 50px;
+}
 
 #left-radius {
 	border-top-left-radius: 10px;
     border-top-right-radius: 0;
 	border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 0;
 }
 
 #right-radius {
@@ -362,12 +395,12 @@ li {list-style: none;}
 .img-frame {
 	width: 555px;
 	height: 230px;
-	padding: 20px 5px 5px 20px;
-	background-color: rgba(245, 245, 245, 0.7);
+	background-color: rgba(196, 208, 205, 0.19);
 }
 
 .img-frame img {
     width: 50%;
+    padding: 23px 0 19px 20px;
 	float: left;
     margin-right: 10%;
     border-radius: 3px
@@ -378,6 +411,9 @@ li {list-style: none;}
     font-size: 26px;
     font-weight: 300;
     text-align: left;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding-top: 22px;
 }
 
 .img-frame a {color: #FFD601;}
@@ -402,7 +438,7 @@ li {list-style: none;}
 
 .img-frame #num-top {
     position: absolute;
-    top: 62%;
+    top: 71%;
     font-size: 16px;
 }
 
