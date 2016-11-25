@@ -1,0 +1,51 @@
+/* Media Queries */
+
+@media (max-width: 480px) {
+    
+    .container {width: 479px;}
+    
+    .container-fluid {width: 480px;}
+    
+    .navbar {width: 479px;}
+    
+}
+
+@media (max-width: 720px) {
+    
+    .container {width: 719px;}
+    
+    .container-fluid {width: 720px;}
+    
+    .navbar {width: 719px;}
+    
+} 
+
+@media (max-width: 768px) {
+    
+    .container {width: 767px;}
+    
+    .container-fluid {width: 768px;}
+    
+    .navbar {width: 767px;}
+    
+} 
+
+@media (max-width: 992px) {
+    
+    .container {width: 991px;}
+    
+    .container-fluid {width: 992px;}
+    
+    .navbar {width: 991px;}
+    
+} 
+
+@media (max-width: 1200px) {
+    
+    .container {width: 1199px;}
+    
+    .container-fluid {width: 1200px;}
+    
+    .navbar {width: 1199px;}
+    
+} 
