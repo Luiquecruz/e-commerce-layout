@@ -11,74 +11,54 @@ Original Color Theme by Luique Cruz:
 /* Media Queries */
 
 @media (max-width: 480px) {
-    .container {
-        width: 479px;
-    }
     
-    .container-fluid {
-        width: 480px;
-    }
+    .container {width: 479px;}
     
-    .navbar {
-        width: 479px;
-    }
+    .container-fluid {width: 480px;}
+    
+    .navbar {width: 479px;}
+    
 }
 
 @media (max-width: 720px) {
-    .container {
-        width: 719px;
-    }
     
-    .container-fluid {
-        width: 720px;
-    }
+    .container {width: 719px;}
     
-    .navbar {
-        width: 719px;
-    }
+    .container-fluid {width: 720px;}
+    
+    .navbar {width: 719px;}
+    
 } 
 
 @media (max-width: 768px) {
-    .container {
-        width: 767px;
-    }
     
-    .container-fluid {
-        width: 768px;
-    }
+    .container {width: 767px;}
     
-    .navbar {
-        width: 767px;
-    }
+    .container-fluid {width: 768px;}
+    
+    .navbar {width: 767px;}
+    
 } 
 
 @media (max-width: 992px) {
-    .container {
-        width: 991px;
-    }
     
-    .container-fluid {
-        width: 992px;
-    }
+    .container {width: 991px;}
     
-    .navbar {
-        width: 991px;
-    }
+    .container-fluid {width: 992px;}
+    
+    .navbar {width: 991px;}
+    
 } 
 
 @media (max-width: 1200px) {
-    .container {
-        width: 1199px;
-    }
     
-    .container-fluid {
-        width: 1200px;
-    }
+    .container {width: 1199px;}
     
-    .navbar {
-        width: 1199px;
-    }
-}   
+    .container-fluid {width: 1200px;}
+    
+    .navbar {width: 1199px;}
+    
+} 
 
 /* General styling */
 
@@ -87,19 +67,13 @@ Original Color Theme by Luique Cruz:
     padding: 0;
 }
 
-body {
-    font-family: 'lato', sans-serif;
-}
+body {font-family: 'lato', sans-serif;}
 
 /* Clear Bootstrap link style */
 
-a, a:link, a:hover, a:visited, a:active {
-    text-decoration: none;
-}
+a, a:link, a:hover, a:visited, a:active {text-decoration: none;}
 
-li {
-	list-style: none;
-}
+li {list-style: none;}
 
 /* Custom Align */
 
@@ -107,6 +81,18 @@ li {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+/* Custom USD Icon Positioning */
+
+.usd-top-cart {
+    position: absolute;
+    top: 20%;
+}
+
+.usd-top {
+    position: absolute;
+    top: 64%;
 }
 
 /* top-header bar style */
@@ -125,12 +111,9 @@ li {
 	border-color: #ddd;
 }
 
-.menu-top-header {
-	list-style: none;
-}
-
 .mth-item {
 	margin-top: 10px;
+    border: 0;
     color: #343e49;
 }
 
@@ -145,58 +128,35 @@ li {
     font-size: 16px;
 }
 
-.mth-item.vr {
-    color: #aaa;
-    font-weight: ;
-}
+.mth-item.vr {color: #aaa;}
 
 .mth-item i, .fa-phone, .fa-envelope-o {
     font-weight: 600;
     color: #FFD601;
 }
 
-.login {
-    color: #aaa;
-}
+.login {color: #aaa;}
 
-#register {
-    margin-right: 2px;
-}
+#register {margin-right: 2px;}
 
-#sign-in {
-    margin-left: 2px;
-}
+#sign-in {margin-left: 2px;}
 
 /* mid-header styling */
 
-.container-fluid .list-inline {
-    margin-bottom: 0;
-    border: none;
-}
-
 #mid-header {
-    padding:  15px 0 20px 0;
+    padding:  35px 0 40px 0;
     margin: 0 auto;
 }
 
 /* Logo */
 
-.logo {
-    display: block;
-    left: -20px;
-    margin-left: 0;
-    padding-left: 0;
-}
-
 .logo a {
     font-weight: 900;
-    font-size: 52px;
+    font-size: 55px;
     color: #444;
 }
 
-.logo a #dot {
-    color: #FFD601;
-}
+.logo a #dot {color: #FFD601;}
 
 /* Seach-box */
 
@@ -229,7 +189,6 @@ li {
     border: 3px solid #FFD601;
     border-radius: 30px;
     border-left: none;
-    
     background-color: #fff;
 }
 
@@ -239,13 +198,10 @@ li {
     background-color: #fff;
 }
 
-.search-box .input-group-addon .dropdown-toggle:hover {
-    background-color: #efefef;
-    border: none;
-}
+.search-box .input-group-addon .dropdown-toggle:hover {color: #888;}
 
 .search-box .input-group-addon:last-child {
-    padding: 10px;
+    padding: 5px;
     margin-right: 0;
     border: 3px solid #FFD601;
     border-radius: 0 30px 30px 0;
@@ -254,8 +210,6 @@ li {
 
 .search-box .input-group-addon .btn-default {
     border: none;
-    margin: 0;
-    padding:0;
     background-color: #FFD601;
 }
 
@@ -285,18 +239,14 @@ li {
     padding: 0;
 }
 
-.store-status-icons li:last-child {
-    margin-left: 10px;
-}
+.store-status-icons li:last-child {margin-left: 10px;}
 
 .store-status-icons a {
     font-weight: 300;
     color: #343e49;
 }
 
-.store-status-icons i {
-    font-size: 20px;
-}
+.store-status-icons i {font-size: 20px;}
 
 .store-status-icons #notifications {
     border-radius: 30px;
@@ -315,9 +265,7 @@ li {
     font-size: 10px;
 }
 
-.store-status-icons #bag-value {
-    font-size: 20px;
-}
+.store-status-icons #bag-value {font-size: 20px;}
 
 /* Menu */
 
@@ -335,35 +283,25 @@ li {
 }
 
 #menu .navbar-nav li {
-    padding: ;
+    padding: 0 10px;
     border: 0.5px solid #cead00;
     border-top: none;
     border-bottom: none;
     border-left: none;
 }
 
-#menu .navbar-nav li:hover {
-    background-color: #cead00;
-}
+#menu .navbar-nav li:hover {background-color: #cead00;}
 
 #menu .navbar-nav a {
     font-weight: 600;
     color: #343e49;
 }
 
-#menu .navbar-nav li:first-child {
-    border-left: none;
-}
+#menu .navbar-nav li:first-child {border-left: none;}
 
-#menu .navbar-nav li:last-child {
-    border-right: none;
-}
+#menu .navbar-nav li:last-child {border-right: none;}
 
 /* Carousel */ 
-
-.carousel {
-	background: #eee;
-}
 
 .item img.carousel-bg {
 	max-height: 600px;
@@ -373,11 +311,12 @@ li {
 .carousel-caption {
 	position: absolute;
 	text-align: left;
+    margin-bottom: 30px;
 }
 
-/* Info section style */
+/* Features section style */
 
-.info {
+.features {
     margin-top: 40px;
     margin-bottom: 20px;
 }
@@ -401,9 +340,7 @@ li {
     margin-left: -4px;
 }
 
-.list-group-item:last-child {
-    margin-left: -3px;
-}
+.list-group-item:last-child {margin-left: -3px;}
 
 #left-radius {
 	border-top-left-radius: 10px;
@@ -420,9 +357,7 @@ li {
 
 /* Product Frames Section Style */
 
-#product-frame {
-    margin-bottom: 40px;
-}
+#product-frame {margin-bottom: 40px;}
 
 .img-frame {
 	width: 555px;
@@ -445,13 +380,9 @@ li {
     text-align: left;
 }
 
-.img-frame a {
-    color: #FFD601;
-}
+.img-frame a {color: #FFD601;}
 
-.img-frame a b {
-    color: #343e49;
-}
+.img-frame a b {color: #343e49;}
 
 .arrow .fa-angle-right {
     text-align: center;
@@ -462,11 +393,6 @@ li {
     clear: both;
     position: absolute;
     top: 55%;
-}
-
-.usd-top {
-    position: absolute;
-    top: 64%;
 }
 
 #price {
@@ -480,9 +406,7 @@ li {
     font-size: 16px;
 }
 
-#arrow-right {
-    margin-left: 15px;    
-}
+#arrow-right {margin-left: 15px;}
 
 /* Products Top box style */
 
