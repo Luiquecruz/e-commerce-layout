@@ -24,57 +24,59 @@
 
     <header id="header">
         
-        <nav class="navbar navbar-inverse navbar-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 text-center">
-                        <div class="top-header navbar-collapse navbar-left">
-                            <ul class="menu-top-header list-inline">
-                                <li class="mth-item phone">
-                                    <i class="fa fa-phone"></i>
-                                    +060 (800) 801-858
-                                </li>
-                                <li class="mth-item email">
-                                    <i class="fa fa-envelope-o"></i>
-                                    info@electro.com
-                                </li>
-                            </ul>
-                        </div> <!-- End top-header -->
-                    </div>
-                    <div class="col-md-8 text-center">
-                        <div class="top-header navbar-collapse navbar-right">
-                            <ul class="menu-top-header list-inline">
-                                <li class="mth-item locator">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker"></i>
-                                        Store Locator
-                                    </a>
-                                    <span class="vr">|</span>
-                                </li>
-                                <li class="mth-item track">
-                                    <a href="#">
-                                        <i class="fa fa-truck fa-flip-horizontal"></i>
-                                        Track Your Order
-                                    </a>
-                                    <span class="vr">|</span>
-                                </li>
-                                <li class="mth-item dollar">
-                                   <a href="#">
-                                        <span class="usd">&#36;</span>
-                                        Dollar (US)
-                                   </a>
-                                    <span class="vr">|</span>
-                                </li>
-                                <li class="mth-item login">
-                                    <i class="fa fa-user"></i>
-                                    <a href="#" id="register">Register</a> or <a href="#" id="sign-in">Sign in</a>
-                                </li>
-                            </ul>
-                        </div> <!-- End top-header -->
-                    </div>
-                </div> <!-- End row -->
-            </div> <!-- End container -->
-        </nav>
+        <div class="wrapper">
+            <nav class="navbar navbar-inverse navbar-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="text-center">
+                            <div class="top-header navbar-collapse navbar-left">
+                                <ul class="menu-top-header list-inline">
+                                    <li class="mth-item phone">
+                                        <i class="fa fa-phone"></i>
+                                        +060 (800) 801-858
+                                    </li>
+                                    <li class="mth-item email">
+                                        <i class="fa fa-envelope-o"></i>
+                                        info@electro.com
+                                    </li>
+                                </ul>
+                            </div> <!-- End top-header -->
+                        </div>
+                        <div class="text-center">
+                            <div class="top-header navbar-collapse navbar-right">
+                                <ul class="menu-top-header list-inline">
+                                    <li class="mth-item locator">
+                                        <a href="#">
+                                            <i class="fa fa-map-marker"></i>
+                                            Store Locator
+                                        </a>
+                                        <span class="vr">|</span>
+                                    </li>
+                                    <li class="mth-item track">
+                                        <a href="#">
+                                            <i class="fa fa-truck fa-flip-horizontal"></i>
+                                            Track Your Order
+                                        </a>
+                                        <span class="vr">|</span>
+                                    </li>
+                                    <li class="mth-item dollar">
+                                       <a href="#">
+                                            <span class="usd">&#36;</span>
+                                            Dollar (US)
+                                       </a>
+                                        <span class="vr">|</span>
+                                    </li>
+                                    <li class="mth-item login">
+                                        <i class="fa fa-user"></i>
+                                        <a href="#" id="register">Register</a> or <a href="#" id="sign-in">Sign in</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- End top-header -->
+                        </div>
+                    </div> <!-- End row -->
+                </div> <!-- End container -->
+            </nav>
+        </div>
 
         <div class="container-fluid text-center">
            <div class="row">
@@ -161,6 +163,7 @@
         
         <nav class="navbar navbar-inverse" id="menu">
            <div class="container">
+              <!--
               <div class="navbar-header">
                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false" aria-controls="navbar">
                    <span class="sr-only">Toggle navigation</span>
@@ -169,6 +172,7 @@
                    <span class="icon-bar"></span>
                  </button>
                </div>
+               -->
                <div class="collapse navbar-collapse" id="#bs-navbar-collapse-1">
                   <ul class="nav navbar-nav">
                      <li><a href="#">TV &amp; Audio</a></li>
@@ -201,11 +205,11 @@
                         <li data-target="#myCarousel" data-slide-to="5"></li>
                     </ol>
                     <!-- Items -->
-                    <!-- Important: Image max height is setted to 600px -->
+                    <!-- Important: Image max height is setted to 530px -->
                     <!-- Important: Images with diferent width sizes may cause crashes -->
                     <div class="carousel-inner" role="listbox">
-                        <div class="item active img-responsive" >
-                            <img class="carousel-bg" src="https://iworkzone.com/img/headline-bg.png" alt="First Slide">
+                        <div class="item active" >
+                            <img class="carousel-img" src="https://iworkzone.com/img/headline-bg.png" alt="First Slide">
                             <div class="container">
                                 <div class="carousel-caption">
                                     <h4>Sell to get what you love</h4>
@@ -221,8 +225,8 @@
                             </div>
                         </div> <!-- end Item active -->
 
-                        <div class="item img-responsive">
-                            <img class="carousel-bg" src="http://www.ibmj.org.br/images/background/colors/top-promo-bg-violet.png" alt="Second Slide">
+                        <div class="item">
+                            <img class="carousel-img" src="http://www.ibmj.org.br/images/background/colors/top-promo-bg-violet.png" alt="Second Slide">
                             <div class="container">
                                 <div class="carousel-caption">
                                     <h4>Sell to get what you love</h4>
@@ -238,8 +242,8 @@
                             </div>
                         </div> <!-- end Item -->
 
-                        <div class="item img-responsive">
-                            <img class="carousel-bg" src="http://www.tinymountainhouses.com/wp-content/uploads/2016/05/slider-bg.jpg" alt="Third Slide">
+                        <div class="item">
+                            <img class="carousel-img" src="http://www.tinymountainhouses.com/wp-content/uploads/2016/05/slider-bg.jpg" alt="Third Slide">
                             <div class="container">
                                 <div class="carousel-caption">
                                     <h4>Sell to get what you love</h4>
@@ -255,8 +259,8 @@
                             </div>
                         </div> <!-- end Item -->
 
-                        <div class="item img-responsive">
-                            <img class="carousel-bg" src="http://www.xds.com.br/wp-content/uploads/2014/06/bg-galaxia.jpg" alt="Fourth Slide">
+                        <div class="item">
+                            <img class="carousel-img" src="http://www.xds.com.br/wp-content/uploads/2014/06/bg-galaxia.jpg" alt="Fourth Slide">
                             <div class="container">
                                 <div class="carousel-caption">
                                     <h4>Sell to get what you love</h4>
@@ -272,8 +276,8 @@
                             </div>
                         </div> <!-- end Item -->
 
-                        <div class="item img-responsive">
-                            <img class="carousel-bg" src="http://www.radioplan.com.br/wp-content/uploads/revslider/full-screen/index-3-2-bg.jpg" alt="Fifth Slide">
+                        <div class="item">
+                            <img class="carousel-img" src="http://www.radioplan.com.br/wp-content/uploads/revslider/full-screen/index-3-2-bg.jpg" alt="Fifth Slide">
                             <div class="container">
                                 <div class="carousel-caption">
                                     <h4>Sell to get what you love</h4>
@@ -289,8 +293,8 @@
                             </div>
                         </div> <!-- end Item -->
 
-                        <div class="item img-responsive">
-                            <img class="carousel-bg" src="http://graduates.cms-cmck.com/wp-content/uploads/2016/09/CMS-Academy-Banner_V4-BG-1920x600.jpg" alt="Sixth Slide">
+                        <div class="item">
+                            <img class="carousel-img" src="http://graduates.cms-cmck.com/wp-content/uploads/2016/09/CMS-Academy-Banner_V4-BG-1920x600.jpg" alt="Sixth Slide">
                             <div class="container">
                                 <div class="carousel-caption">
                                     <h4>Sell to get what you love</h4>
@@ -371,8 +375,8 @@
        
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="img-frame">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="img-frame" id="frame-left">
                         <img src="http://photoh.com.au/images/camera-equipment-1149448_1920_5.jpg" alt="Left Item Frame">
                         <p>Catch hottest<br/><strong>DEALS</strong> in cameras<br/>category</p>
                         <a href="#">
@@ -385,8 +389,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="img-frame">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="img-frame" id="frame-right">
                         <img src="http://cdn.ndtv.com/tech/images/micromax_unite2_box_ndtv_small.jpg" alt="Right Item Frame">
                         <p>Tablets,<br/>Smartphones<br/><strong>AND MORE</strong><br/></p>
                         <span id="from">From</span><br>
@@ -408,290 +412,283 @@
     <section id="products-top">
 
         <div class="container">
-            <div class="row">
-                <div class="featured">
-                    <div class="container">
+           <div class="row">
+              <div class="carousel slide" id="custom-carousel" data-ride="carousel">
+                 <div class="controls">
+                    <ul class="list-inline">
+                       <li data-target="#custom-carousel" data-slide-to="0" class="active">
+                          <a href="#"><p>Featured</p></a>
+                       </li>
+                       <li data-target="#custom-carousel" data-slide-to="1">
+                          <a href="#"><p>On Sale</p></a>
+                       </li>
+                       <li data-target="#custom-carousel" data-slide-to="2">
+                          <a href="#"><p>Top Rated</p></a>
+                       </li>
+                    </ul>
+                    <hr id="trail">
+                 </div> <!-- End Controls -->
+                 
+                 <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                       <div class="item active">
+                          <div class="container">
+                             <div class="row">
+                                <!-- Items -->
+                                <div class="col-md-3 box-grid">
+                                   <h6>Audio Speakers</h6>
+                                   <p><b>Wireless Audio System<br/>Multiroom 360</b></p>
+                                   <img src="http://images.samsung.com/is/image/samsung/uk_WAM7500-XU_001_Front_black_thumb?wid=250&hei=250" class="img-responsive" alt="product carousel 1">
+                                   <ul class="list-inline">
+                                      <li>
+                                         <i class="fa fa-usd">1 999,99</i>
+                                      </li>
+                                      <li>    
+                                         <h6><i class="fa fa-usd strike"><span>2 299,00</span></i></h6>
+                                      </li>
+                                      <li class="text-center cart-item-dicount">
+                                         <a href="#">
+                                            <span class="fa-stack fa-lg">
+                                               <i class="fa fa-circle-o fa-stack-2x"></i>
+                                               <i class="fa fa-cart-arrow-down"></i>
+                                            </span>
+                                         </a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <div class="col-md-3 box-grid">
+                                   <h6>Laptops</h6>
+                                   <p><b>Tablet White EliteBook<br/>Revolve 810 G2</b></p>
+                                   <img src="http://www.laptopsdirect.co.uk/Images/F1N33EA_1_MediumClassic.jpg?width=250&height=250&v=1" class="img-responsive" alt="product carousel 2">
+                                   <ul class="list-inline">
+                                      <li>
+                                         <i class="fa fa-usd">1 300,00</i>
+                                      </li>
+                                      <li class="text-center cart-item-case-2">
+                                         <a href="#">
+                                            <span class="fa-stack fa-lg">
+                                               <i class="fa fa-circle-o fa-stack-2x"></i>
+                                               <i class="fa fa-cart-arrow-down"></i>
+                                            </span>
+                                         </a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <div class="col-md-3 box-grid">
+                                   <h6>Headphones</h6>
+                                   <p><b>Purple Solo 2 Wireless<br/>&nbsp;</b></p>
+                                   <img src="http://iacom1-a.akamaihd.net/produtos/01/00/sku/126988/9/126988940G1.jpg" alt="product carousel 3">
+                                   <ul class="list-inline">
+                                      <li>
+                                         <i class="fa fa-usd">248,00</i>
+                                      </li>
+                                      <li class="text-center cart-item">
+                                         <a href="#">
+                                            <span class="fa-stack fa-lg">
+                                               <i class="fa fa-circle-o fa-stack-2x"></i>
+                                               <i class="fa fa-cart-arrow-down"></i>
+                                            </span>
+                                         </a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <div class="col-md-3 box-grid">
+                                   <h6>Cameras</h6>
+                                   <p><b>Widescreen NX Mini F1 apart<br/>SMART NX</b></p>
+                                   <img src="http://images.samsung.com/is/image/samsung/ae_EV-NX3000BOHM3_000000001_Front_white_thumb?$M-Thumbnail$" alt="product carousel 4">
+                                   <ul class="list-inline">
+                                      <li>
+                                         <i class="fa fa-usd">559,00</i>
+                                      </li>
+                                      <li class="text-center cart-item">
+                                         <a href="#">
+                                            <span class="fa-stack fa-lg">
+                                               <i class="fa fa-circle-o fa-stack-2x"></i>
+                                               <i class="fa fa-cart-arrow-down"></i>
+                                            </span>
+                                         </a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- End Items -->
+                             </div>
+                          </div> <!-- End Container -->
+                       </div> <!-- End Item Active -->
+                              
+                       <div class="item">
+                          <div class="container">
+                             <div class="row">
+                                <!-- Items -->
+                                <div class="col-md-3 box-grid">
+                                   <h6>Audio Speakers</h6>
+                                   <p><b>Wireless Audio System<br/>Multiroom 360</b></p>
+                                   <img src="http://images.samsung.com/is/image/samsung/uk_WAM7500-XU_001_Front_black_thumb?wid=250&hei=250" class="img-responsive" alt="product carousel 1">
+                                   <ul class="list-inline">
+                                      <li>
+                                         <i class="fa fa-usd">1 999,99</i>
+                                      </li>
+                                      <li>    
+                                         <h6><i class="fa fa-usd strike"><span>2 299,00</span></i></h6>
+                                      </li>
+                                      <li class="text-center cart-item-dicount">
+                                         <a href="#">
+                                            <span class="fa-stack fa-lg">
+                                               <i class="fa fa-circle-o fa-stack-2x"></i>
+                                               <i class="fa fa-cart-arrow-down"></i>
+                                            </span>
+                                         </a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <div class="col-md-3 box-grid">
+                                   <h6>Laptops</h6>
+                                   <p><b>Tablet White EliteBook<br/>Revolve 810 G2</b></p>
+                                   <img src="http://www.laptopsdirect.co.uk/Images/F1N33EA_1_MediumClassic.jpg?width=250&height=250&v=1" class="img-responsive" alt="product carousel 2">
+                                   <ul class="list-inline">
+                                      <li>
+                                         <i class="fa fa-usd">1 300,00</i>
+                                      </li>
+                                      <li class="text-center cart-item-case-2">
+                                         <a href="#">
+                                            <span class="fa-stack fa-lg">
+                                               <i class="fa fa-circle-o fa-stack-2x"></i>
+                                               <i class="fa fa-cart-arrow-down"></i>
+                                            </span>
+                                         </a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <div class="col-md-3 box-grid">
+                                   <h6>Headphones</h6>
+                                   <p><b>Purple Solo 2 Wireless<br/>&nbsp;</b></p>
+                                   <img src="http://iacom1-a.akamaihd.net/produtos/01/00/sku/126988/9/126988940G1.jpg" alt="product carousel 3">
+                                   <ul class="list-inline">
+                                      <li>
+                                         <i class="fa fa-usd">248,00</i>
+                                      </li>
+                                      <li class="text-center cart-item">
+                                         <a href="#">
+                                            <span class="fa-stack fa-lg">
+                                               <i class="fa fa-circle-o fa-stack-2x"></i>
+                                               <i class="fa fa-cart-arrow-down"></i>
+                                            </span>
+                                         </a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <div class="col-md-3 box-grid">
+                                   <h6>Cameras</h6>
+                                   <p><b>Widescreen NX Mini F1 apart<br/>SMART NX</b></p>
+                                   <img src="http://images.samsung.com/is/image/samsung/ae_EV-NX3000BOHM3_000000001_Front_white_thumb?$M-Thumbnail$" alt="product carousel 4">
+                                   <ul class="list-inline">
+                                      <li>
+                                         <i class="fa fa-usd">559,00</i>
+                                      </li>
+                                      <li class="text-center cart-item">
+                                         <a href="#">
+                                            <span class="fa-stack fa-lg">
+                                               <i class="fa fa-circle-o fa-stack-2x"></i>
+                                               <i class="fa fa-cart-arrow-down"></i>
+                                            </span>
+                                         </a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- End Items -->
+                             </div>
+                          </div> <!-- End Container -->
+                       </div> <!-- End Item -->
+                              
+                       <div class="item">
+                          <div class="container">
+                             <div class="row">
+                                <!-- Items -->
+                                <div class="col-md-3 box-grid">
+                                   <h6>Audio Speakers</h6>
+                                   <p><b>Wireless Audio System<br/>Multiroom 360</b></p>
+                                   <img src="http://images.samsung.com/is/image/samsung/uk_WAM7500-XU_001_Front_black_thumb?wid=250&hei=250" class="img-responsive" alt="product carousel 1">
+                                   <ul class="list-inline">
+                                      <li>
+                                         <i class="fa fa-usd">1 999,99</i>
+                                      </li>
+                                      <li>    
+                                         <h6><i class="fa fa-usd strike"><span>2 299,00</span></i></h6>
+                                      </li>
+                                      <li class="text-center cart-item-dicount">
+                                         <a href="#">
+                                            <span class="fa-stack fa-lg">
+                                               <i class="fa fa-circle-o fa-stack-2x"></i>
+                                               <i class="fa fa-cart-arrow-down"></i>
+                                            </span>
+                                         </a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <div class="col-md-3 box-grid">
+                                   <h6>Laptops</h6>
+                                   <p><b>Tablet White EliteBook<br/>Revolve 810 G2</b></p>
+                                   <img src="http://www.laptopsdirect.co.uk/Images/F1N33EA_1_MediumClassic.jpg?width=250&height=250&v=1" class="img-responsive" alt="product carousel 2">
+                                   <ul class="list-inline">
+                                      <li>
+                                         <i class="fa fa-usd">1 300,00</i>
+                                      </li>
+                                      <li class="text-center cart-item-case-2">
+                                         <a href="#">
+                                            <span class="fa-stack fa-lg">
+                                               <i class="fa fa-circle-o fa-stack-2x"></i>
+                                               <i class="fa fa-cart-arrow-down"></i>
+                                            </span>
+                                         </a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <div class="col-md-3 box-grid">
+                                   <h6>Headphones</h6>
+                                   <p><b>Purple Solo 2 Wireless<br/>&nbsp;</b></p>
+                                   <img src="http://iacom1-a.akamaihd.net/produtos/01/00/sku/126988/9/126988940G1.jpg" alt="product carousel 3">
+                                   <ul class="list-inline">
+                                      <li>
+                                         <i class="fa fa-usd">248,00</i>
+                                      </li>
+                                      <li class="text-center cart-item">
+                                         <a href="#">
+                                            <span class="fa-stack fa-lg">
+                                               <i class="fa fa-circle-o fa-stack-2x"></i>
+                                               <i class="fa fa-cart-arrow-down"></i>
+                                            </span>
+                                         </a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <div class="col-md-3 box-grid">
+                                   <h6>Cameras</h6>
+                                   <p><b>Widescreen NX Mini F1 apart<br/>SMART NX</b></p>
+                                   <img src="http://images.samsung.com/is/image/samsung/ae_EV-NX3000BOHM3_000000001_Front_white_thumb?$M-Thumbnail$" alt="product carousel 4">
+                                   <ul class="list-inline">
+                                      <li>
+                                         <i class="fa fa-usd">559,00</i>
+                                      </li>
+                                      <li class="text-center cart-item">
+                                         <a href="#">
+                                            <span class="fa-stack fa-lg">
+                                               <i class="fa fa-circle-o fa-stack-2x"></i>
+                                               <i class="fa fa-cart-arrow-down"></i>
+                                            </span>
+                                         </a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- End Items -->
+                             </div>
+                          </div> <!-- End Container -->
+                       </div> <!-- End Item -->
+                    </div> <!-- end carousel-inner -->
+                 <!-- End Wrapper for slides -->
+              </div> <!-- end custom-carousel -->
+           </div> <!-- End Row -->
+        </div> <!-- End Container -->
 
-                        <div class="carousel slide" id="custom-carousel" data-ride="carousel">
-                            <div class="controls">
-                                <ul class="list-inline">
-                                    <li data-target="#custom-carousel" data-slide-to="0" class="active">
-                                        <a href="#"><h4>Featured</h4></a>
-                                    </li>
-                                    <li data-target="#custom-carousel" data-slide-to="1">
-                                        <a href="#"><h4>On Sale</h4></a>
-                                    </li>
-                                    <li data-target="#custom-carousel" data-slide-to="2">
-                                        <a href="#"><h4>Top Rated</h4></a>
-                                    </li>
-                                    <hr id="trail">
-                                </ul>
-                            </div> <!-- end controls -->
-
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner">
-
-                                <div class="item active">
-                                    <div class="container">
-                                        <div class="row">
-                                            <!-- Items -->
-                                            <div class="col-md-3" id="box-grid">
-                                                <h6>Audio Speakers</h6>
-                                                <p><b>Wireless Audio System<br/>Multiroom 360</b></p>
-                                                <img src="http://images.samsung.com/is/image/samsung/uk_WAM7500-XU_001_Front_black_thumb?wid=250&hei=250" class="img-responsive">
-                                                <ul class="list-inline">
-                                                    <li>
-                                                        <i class="fa fa-usd">1 999,99</i>
-                                                    </li>
-                                                    <li>    
-                                                        <h6><i class="fa fa-usd"><strike>2 299,00</strike></i></h6>
-                                                    </li>
-                                                    <li class="text-center" id="cart-item-dicount">
-                                                        <a href="#">
-                                                            <span class="fa-stack fa-lg">
-                                                                <i class="fa fa-circle-o fa-stack-2x"></i>
-                                                                <i class="fa fa-cart-arrow-down"></i>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-3" id="box-grid">
-                                                <h6>Laptops</h6>
-                                                <p><b>Tablet White EliteBook<br/>Revolve 810 G2</b></p>
-                                                <img src="http://www.laptopsdirect.co.uk/Images/F1N33EA_1_MediumClassic.jpg?width=250&height=250&v=1" class="img-responsive">
-                                                <ul class="list-inline">
-                                                    <li>
-                                                        <i class="fa fa-usd">1 300,00</i>
-                                                    </li>
-                                                    <li class="text-center" id="cart-item-999p">
-                                                        <a href="#">
-                                                            <span class="fa-stack fa-lg">
-                                                                <i class="fa fa-circle-o fa-stack-2x"></i>
-                                                                <i class="fa fa-cart-arrow-down"></i>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-3" id="box-grid">
-                                                <h6>Headphones</h6>
-                                                <p><b>Purple Solo 2 Wireless<br/>.</b></p>
-                                                <img src="http://iacom1-a.akamaihd.net/produtos/01/00/sku/126988/9/126988940G1.jpg" class="img-responsive">
-                                                <ul class="list-inline">
-                                                    <li>
-                                                        <i class="fa fa-usd">248,00</i>
-                                                    </li>
-                                                    <li class="text-center" id="cart-item">
-                                                        <a href="#">
-                                                            <span class="fa-stack fa-lg">
-                                                                <i class="fa fa-circle-o fa-stack-2x"></i>
-                                                                <i class="fa fa-cart-arrow-down"></i>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-3" id="box-grid">
-                                                <h6>Cameras</h6>
-                                                <p><b>Widescreen NX Mini F1 apart<br/>SMART NX</b></p>
-                                                <img src="http://images.samsung.com/is/image/samsung/ae_EV-NX3000BOHM3_000000001_Front_white_thumb?$M-Thumbnail$" class="img-responsive">
-                                                <ul class="list-inline">
-                                                    <li>
-                                                        <i class="fa fa-usd">559,00</i>
-                                                    </li>
-                                                    <li class="text-center" id="cart-item">
-                                                        <a href="#">
-                                                            <span class="fa-stack fa-lg">
-                                                                <i class="fa fa-circle-o fa-stack-2x"></i>
-                                                                <i class="fa fa-cart-arrow-down"></i>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <!-- end Items -->
-                                        </div>
-                                    </div> <!-- end container -->
-                                </div> <!-- end item-active -->
-                                
-                                <div class="item">
-                                    <div class="container">
-                                        <div class="row">
-                                            <!-- Items -->
-                                            <div class="col-md-3" id="box-grid">
-                                                <h6>Audio Speakers</h6>
-                                                <p><b>Wireless Audio System<br/>Multiroom 360</b></p>
-                                                <img src="http://images.samsung.com/is/image/samsung/uk_WAM7500-XU_001_Front_black_thumb?wid=250&hei=250" class="img-responsive">
-                                                <ul class="list-inline">
-                                                    <li>
-                                                        <i class="fa fa-usd">1 999,99</i>
-                                                    </li>
-                                                    <li>    
-                                                        <h6><i class="fa fa-usd"><strike>2 299,00</strike></i></h6>
-                                                    </li>
-                                                    <li class="text-center" id="cart-item-dicount">
-                                                        <a href="#">
-                                                            <span class="fa-stack fa-lg">
-                                                                <i class="fa fa-circle-o fa-stack-2x"></i>
-                                                                <i class="fa fa-cart-arrow-down"></i>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-3" id="box-grid">
-                                                <h6>Laptops</h6>
-                                                <p><b>Tablet White EliteBook<br/>Revolve 810 G2</b></p>
-                                                <img src="http://www.laptopsdirect.co.uk/Images/F1N33EA_1_MediumClassic.jpg?width=250&height=250&v=1" class="img-responsive">
-                                                <ul class="list-inline">
-                                                    <li>
-                                                        <i class="fa fa-usd">1 300,00</i>
-                                                    </li>
-                                                    <li class="text-center" id="cart-item-999p">
-                                                        <a href="#">
-                                                            <span class="fa-stack fa-lg">
-                                                                <i class="fa fa-circle-o fa-stack-2x"></i>
-                                                                <i class="fa fa-cart-arrow-down"></i>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-3" id="box-grid">
-                                                <h6>Headphones</h6>
-                                                <p><b>Purple Solo 2 Wireless<br/>.</b></p>
-                                                <img src="http://iacom1-a.akamaihd.net/produtos/01/00/sku/126988/9/126988940G1.jpg" class="img-responsive">
-                                                <ul class="list-inline">
-                                                    <li>
-                                                        <i class="fa fa-usd">248,00</i>
-                                                    </li>
-                                                    <li class="text-center" id="cart-item">
-                                                        <a href="#">
-                                                            <span class="fa-stack fa-lg">
-                                                                <i class="fa fa-circle-o fa-stack-2x"></i>
-                                                                <i class="fa fa-cart-arrow-down"></i>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-3" id="box-grid">
-                                                <h6>Cameras</h6>
-                                                <p><b>Widescreen NX Mini F1 apart<br/>SMART NX</b></p>
-                                                <img src="http://images.samsung.com/is/image/samsung/ae_EV-NX3000BOHM3_000000001_Front_white_thumb?$M-Thumbnail$" class="img-responsive">
-                                                <ul class="list-inline">
-                                                    <li>
-                                                        <i class="fa fa-usd">559,00</i>
-                                                    </li>
-                                                    <li class="text-center" id="cart-item">
-                                                        <a href="#">
-                                                            <span class="fa-stack fa-lg">
-                                                                <i class="fa fa-circle-o fa-stack-2x"></i>
-                                                                <i class="fa fa-cart-arrow-down"></i>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <!-- end Items -->
-                                        </div>
-                                    </div> <!-- end container -->
-                                </div> <!-- end item -->
-
-                                <div class="item">
-                                    <div class="container">
-                                        <div class="row">
-                                            <!-- Items -->
-                                            <div class="col-md-3" id="box-grid">
-                                                <h6>Audio Speakers</h6>
-                                                <p><b>Wireless Audio System<br/>Multiroom 360</b></p>
-                                                <img src="http://images.samsung.com/is/image/samsung/uk_WAM7500-XU_001_Front_black_thumb?wid=250&hei=250" class="img-responsive">
-                                                <ul class="list-inline">
-                                                    <li>
-                                                        <i class="fa fa-usd">1 999,99</i>
-                                                    </li>
-                                                    <li>    
-                                                        <h6><i class="fa fa-usd"><strike>2 299,00</strike></i></h6>
-                                                    </li>
-                                                    <li class="text-center" id="cart-item-dicount">
-                                                        <a href="#">
-                                                            <span class="fa-stack fa-lg">
-                                                                <i class="fa fa-circle-o fa-stack-2x"></i>
-                                                                <i class="fa fa-cart-arrow-down"></i>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-3" id="box-grid">
-                                                <h6>Laptops</h6>
-                                                <p><b>Tablet White EliteBook<br/>Revolve 810 G2</b></p>
-                                                <img src="http://www.laptopsdirect.co.uk/Images/F1N33EA_1_MediumClassic.jpg?width=250&height=250&v=1" class="img-responsive">
-                                                <ul class="list-inline">
-                                                    <li>
-                                                        <i class="fa fa-usd">1 300,00</i>
-                                                    </li>
-                                                    <li class="text-center" id="cart-item-999p">
-                                                        <a href="#">
-                                                            <span class="fa-stack fa-lg">
-                                                                <i class="fa fa-circle-o fa-stack-2x"></i>
-                                                                <i class="fa fa-cart-arrow-down"></i>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-3" id="box-grid">
-                                                <h6>Headphones</h6>
-                                                <p><b>Purple Solo 2 Wireless<br/>.</b></p>
-                                                <img src="http://iacom1-a.akamaihd.net/produtos/01/00/sku/126988/9/126988940G1.jpg" class="img-responsive">
-                                                <ul class="list-inline">
-                                                    <li>
-                                                        <i class="fa fa-usd">248,00</i>
-                                                    </li>
-                                                    <li class="text-center" id="cart-item">
-                                                        <a href="#">
-                                                            <span class="fa-stack fa-lg">
-                                                                <i class="fa fa-circle-o fa-stack-2x"></i>
-                                                                <i class="fa fa-cart-arrow-down"></i>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-3" id="box-grid">
-                                                <h6>Cameras</h6>
-                                                <p><b>Widescreen NX Mini F1 apart<br/>SMART NX</b></p>
-                                                <img src="http://images.samsung.com/is/image/samsung/ae_EV-NX3000BOHM3_000000001_Front_white_thumb?$M-Thumbnail$" class="img-responsive">
-                                                <ul class="list-inline">
-                                                    <li>
-                                                        <i class="fa fa-usd">559,00</i>
-                                                    </li>
-                                                    <li class="text-center" id="cart-item">
-                                                        <a href="#">
-                                                            <span class="fa-stack fa-lg">
-                                                                <i class="fa fa-circle-o fa-stack-2x"></i>
-                                                                <i class="fa fa-cart-arrow-down"></i>
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <!-- end Items -->
-                                        </div>
-                                    </div> <!-- end container -->
-                                </div> <!-- end item -->
-                                
-                            </div> <!-- end carousel-inner -->
-                        </div> <!-- end custom-carousel -->
-
-                    </div> <!-- end container -->
-                </div> <!-- end featured -->
-            </div>
-        </div> <!-- end container -->
-
-    </section> <!-- end products-top -->
+    </section> <!-- End Products Top -->
 
     <section id="banner-mid">
 
@@ -729,13 +726,13 @@
 
     </section> <!-- end top-categories-month -->
 
-    <secton id="products-bottom">
+    <section id="products-bottom">
 
         <div class="container">
             
         </div> <!-- end container -->
 
-    </secton> <!-- end products-bottom -->
+    </section> <!-- end products-bottom -->
 
     <footer id="footer">
 
@@ -760,7 +757,7 @@
                     <li>
                         <form class="form-inline">
                             <div class="form-group">
-                                <label class="sr-only" for=""></label>
+                                <label class="sr-only"></label>
                                 <div class="input-group">
                                     <input type="email" class="form-control" placeholder="Enter your email address">
                                     <div class="input-group-addon">
